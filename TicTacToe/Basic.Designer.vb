@@ -157,7 +157,6 @@ Partial Class Basic
         '
         Me.Button2.BackColor = System.Drawing.Color.White
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button2.Enabled = False
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Segoe Script", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -193,6 +192,9 @@ Partial Class Basic
         Me.lbWho.Size = New System.Drawing.Size(166, 51)
         Me.lbWho.TabIndex = 14
         Me.lbWho.Text = "X-TURN"
+        '
+        'Timer1
+        '
         '
         'Basic
         '

@@ -23,7 +23,6 @@ Partial Class startForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(startForm))
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel2 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
@@ -38,9 +37,9 @@ Partial Class startForm
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel6 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,7 +53,7 @@ Partial Class startForm
         Me.Guna2Button3.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button3.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(146, 109)
+        Me.Guna2Button3.Location = New System.Drawing.Point(146, 115)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
         Me.Guna2Button3.Size = New System.Drawing.Size(125, 31)
@@ -65,10 +64,10 @@ Partial Class startForm
         '
         Me.Guna2ShadowPanel2.BackColor = System.Drawing.Color.Black
         Me.Guna2ShadowPanel2.FillColor = System.Drawing.Color.White
-        Me.Guna2ShadowPanel2.Location = New System.Drawing.Point(152, 116)
+        Me.Guna2ShadowPanel2.Location = New System.Drawing.Point(153, 120)
         Me.Guna2ShadowPanel2.Name = "Guna2ShadowPanel2"
         Me.Guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black
-        Me.Guna2ShadowPanel2.Size = New System.Drawing.Size(122, 29)
+        Me.Guna2ShadowPanel2.Size = New System.Drawing.Size(122, 31)
         Me.Guna2ShadowPanel2.TabIndex = 12
         '
         'Guna2Button7
@@ -81,7 +80,7 @@ Partial Class startForm
         Me.Guna2Button7.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Location = New System.Drawing.Point(14, 31)
+        Me.Guna2Button7.Location = New System.Drawing.Point(16, 42)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
         Me.Guna2Button7.Size = New System.Drawing.Size(391, 49)
@@ -228,21 +227,6 @@ Partial Class startForm
         Me.Guna2DragControl1.ContainerControl = Me
         Me.Guna2DragControl1.TargetControl = Me.Guna2Panel1
         '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox1)
-        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(419, 25)
-        Me.Guna2Panel1.TabIndex = 32
-        Me.Guna2Panel1.UseTransparentBackground = True
-        '
         'Guna2ControlBox2
         '
         Me.Guna2ControlBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -276,11 +260,25 @@ Partial Class startForm
         Me.Guna2ControlBox1.TabIndex = 33
         Me.Guna2ControlBox1.UseTransparentBackground = True
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox1)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(419, 25)
+        Me.Guna2Panel1.TabIndex = 32
+        Me.Guna2Panel1.UseTransparentBackground = True
+        '
         'startForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(419, 620)
         Me.Controls.Add(Me.Guna2Button6)
         Me.Controls.Add(Me.Guna2ShadowPanel6)
@@ -318,6 +316,6 @@ Partial Class startForm
     Friend WithEvents Guna2ShadowPanel6 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
 End Class

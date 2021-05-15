@@ -1,50 +1,83 @@
 ﻿Public Class Basic
     Dim turn As Boolean = True 'serves as switch, from x to o
-    Dim i As Integer ' for blinking text 
+    Dim nround As Integer = 1 'current round no.
+
     Public Function Checker(btnName)
 
         If String.IsNullOrEmpty(btnName.Text) Then
-            ' "Contains Empty value or Null Value"
+            'can only be used if picked tile is empty
 
             ' check if whose turn is; true for X false for O
             If turn = True Then
                 btnName.Text = "X"
+                lbWho.Text = "O-TURN"
                 turn = False
             Else
                 btnName.Text = "O"
+                lbWho.Text = "X-TURN"
                 turn = True
             End If
         End If
 
         'Winning scenarios: 8
         If (((Button1.Text = Button2.Text) And (Button2.Text = Button3.Text)) And Button1.Text <> "") Then
-            MessageBox.Show(Button1.Text + " wins")
+            ender(Button1.Text)
+
         ElseIf ((Button4.Text = Button5.Text) And (Button5.Text = Button6.Text) And Button5.Text <> "") Then
-            MessageBox.Show(Button4.Text + " wins")
+            ender(Button4.Text)
 
         ElseIf ((Button7.Text = Button8.Text) And (Button8.Text = Button9.Text) And Button8.Text <> "") Then
-            MessageBox.Show(Button7.Text + " wins")
+            ender(Button7.Text)
 
         ElseIf ((Button1.Text = Button6.Text) And (Button6.Text = Button9.Text) And Button9.Text <> "") Then
-            MessageBox.Show(Button1.Text + " wins")
+            ender(Button1.Text)
 
         ElseIf ((Button2.Text = Button5.Text) And (Button5.Text = Button8.Text) And Button8.Text <> "") Then
-            MessageBox.Show(Button2.Text + " wins")
+            ender(Button2.Text)
 
         ElseIf ((Button4.Text = Button3.Text) And (Button4.Text = Button7.Text) And Button7.Text <> "") Then
-            MessageBox.Show(Button4.Text + " wins")
+            ender(Button4.Text)
 
         ElseIf ((Button1.Text = Button5.Text) And (Button5.Text = Button7.Text) And Button7.Text <> "") Then
-            MessageBox.Show(Button1.Text + " wins")
+            ender(Button1.Text)
 
         ElseIf ((Button3.Text = Button5.Text) And (Button5.Text = Button9.Text) And Button9.Text <> "") Then
-            MessageBox.Show(Button3.Text + " wins")
+            ender(Button3.Text)
+        End If
+    End Function
+
+    Public Function ender(who)
+        'who = "X"?(lbWho.Text = "Player-2 wins!") : lbWho.Text = "Player-1 wins!"
+
+        'Timer1.Stop()
+        lbWho.Text = ""
+        If who = "X" Then
+            p1Lb.Text = CInt(p1Lb.Text) + 1
+        ElseIf who = "O" Then
+            p2LB.Text = CInt(p2LB.Text) + 1
+        End If
+
+        winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
+        winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
+        winpop.ShowDialog()
+    End Function
+
+    Public Function reset()
+        'clear tiles' values
+        For Each txt In {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button9, Button8}
+            txt.Text = ""
+        Next
+
+        'set first turn on the next round, even round for O-player
+        If (nround Mod 2 = 0) Then
+            turn = False
+            lbWho.Text = "O-TURN"
+        Else
+            turn = True
+            lbWho.Text = "X-TURN"
         End If
 
     End Function
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Timer1.Enabled = True
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Checker(Button1)
@@ -82,21 +115,46 @@
         Checker(Button7)
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        'For blinking text, or on or off with the help of timer
-        i += 1
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles homePb.Click
+        Dim ask As DialogResult = MessageBox.Show("Current game progress will not be save, go to main menu?",
+                            "Exit to Main Menu",
+                            MessageBoxButtons.YesNo)
 
-        If i = 2 Then
-            If turn = True Then
-                lbWho.Text = "X-TURN"
-            Else
-                lbWho.Text = "O-TURN"
-            End If
-
-        ElseIf i = 9 Then
-            lbWho.Text = ""
-            i = 0
-
+        If (ask = DialogResult.Yes) Then
+            Me.Close()
+            startForm.Show()
         End If
     End Sub
+
+    Private Sub helpPb_Click(sender As Object, e As EventArgs) Handles helpPb.Click
+        'Pop game mechanics of the game currently played
+    End Sub
+
+    Private Sub resetPb_Click(sender As Object, e As EventArgs) Handles resetPb.Click
+        'reset current round
+        Dim ask As DialogResult = MessageBox.Show("Yo sure? Reset tiles?",
+                            "Reset",
+                            MessageBoxButtons.YesNo)
+
+        If (ask = DialogResult.Yes) Then
+            reset()
+        End If
+    End Sub
+
+    Private Sub drawBt_Click(sender As Object, e As EventArgs) Handles drawBt.Click
+        'draw, increment round to change first turn
+        Dim ask As DialogResult = MessageBox.Show("Yo sure? Accept draw?",
+                            "Draw",
+                            MessageBoxButtons.YesNo)
+
+        If (ask = DialogResult.Yes) Then
+            nround += 1
+            reset()
+        End If
+    End Sub
+
+    Public Function incr()
+        nround += 1 'to increment round, or winpop to access nround
+    End Function
+
 End Class

@@ -82,6 +82,12 @@
     <Compile Include="Basic.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="winpop.Designer.vb">
+      <DependentUpon>winpop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="winpop.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ulti.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Basic.resx">
       <DependentUpon>Basic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winpop.resx">
+      <DependentUpon>winpop.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ulti.resx">
       <DependentUpon>Ulti.vb</DependentUpon>

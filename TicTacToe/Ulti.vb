@@ -1,14 +1,14 @@
 ﻿Public Class Ulti
     Dim turn As Boolean = True 'serves as switch, from x to o
     Dim i As Integer ' for blinking text 
-
+    Dim val(9, 9) As Char 'holds the value of the smallest box (group, specific box)
     Public Function director(place)
 
         'reset color of current grp
-        Me.Controls("GroupBox" & place(0)).BackColor = Color.Gray
+        Me.Controls("GroupBox" & place(0)).BorderColor = Color.Transparent
 
         'highlight which block where the next player will move
-        Me.Controls("GroupBox" & place(1)).BackColor = Color.Green
+        Me.Controls("GroupBox" & place(1)).BorderColor = Color.Black
 
         'RESTRICT: turn off other buttons/groupbox
         'dont turn off destination:
@@ -40,96 +40,92 @@
     End Function
 
     Public Function MiniChecker(grp)
-        Dim grp_holds() As String = New String(9) {}
-        grp_holds(0) = ""
-        'get the values per smallest box
-        For x As Integer = 1 To 9
-            Dim loc As String = x.ToString
 
-            'get button's value
-            grp_holds(x) = getVal(grp + x.ToString)
-        Next
+        Dim pb As String = "pb" + CStr(grp) 'picture box name for winned grp
 
-        'after getting the values of group no. grp, check if the group is won:
-        'Winning scenarios: 8
-        If (((grp_holds(1) = grp_holds(2)) And (grp_holds(2) = grp_holds(3))) And grp_holds(1) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(1)
+        'check if the group Is won, Winning scenarios: 8
+        If ((val(grp, 1) = val(grp, 2)) And (val(grp, 2) = val(grp, 3)) And val(grp, 1) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 1)), True)(0), PictureBox).Visible = True
 
-        ElseIf (((grp_holds(6) = grp_holds(5)) And (grp_holds(5) = grp_holds(4))) And grp_holds(6) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(6)
+        ElseIf ((val(grp, 6) = val(grp, 5)) And (val(grp, 5) = val(grp, 4)) And val(grp, 6) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 6)), True)(0), PictureBox).Visible = True
 
-        ElseIf (((grp_holds(9) = grp_holds(8)) And (grp_holds(8) = grp_holds(7))) And grp_holds(9) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(9)
+        ElseIf ((val(grp, 9) = val(grp, 8)) And (val(grp, 8) = val(grp, 7)) And val(grp, 9) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 9)), True)(0), PictureBox).Visible = True
 
-        ElseIf (((grp_holds(1) = grp_holds(6)) And (grp_holds(6) = grp_holds(9))) And grp_holds(1) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(1)
+        ElseIf ((val(grp, 1) = val(grp, 6)) And (val(grp, 6) = val(grp, 9)) And val(grp, 6) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 6)), True)(0), PictureBox).Visible = True
 
-        ElseIf (((grp_holds(2) = grp_holds(5)) And (grp_holds(5) = grp_holds(8))) And grp_holds(2) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(2)
+        ElseIf ((val(grp, 2) = val(grp, 5)) And (val(grp, 5) = val(grp, 8)) And val(grp, 8) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 8)), True)(0), PictureBox).Visible = True
 
-        ElseIf (((grp_holds(3) = grp_holds(4)) And (grp_holds(4) = grp_holds(7))) And grp_holds(3) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(3)
+        ElseIf ((val(grp, 3) = val(grp, 4)) And (val(grp, 4) = val(grp, 7)) And val(grp, 3) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 3)), True)(0), PictureBox).Visible = True
 
-        ElseIf (((grp_holds(1) = grp_holds(5)) And (grp_holds(5) = grp_holds(8))) And grp_holds(1) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(1)
+        ElseIf ((val(grp, 1) = val(grp, 5)) And (val(grp, 5) = val(grp, 7)) And val(grp, 7) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 7)), True)(0), PictureBox).Visible = True
 
-        ElseIf (((grp_holds(3) = grp_holds(5)) And (grp_holds(5) = grp_holds(9))) And grp_holds(3) <> "") Then
-            DirectCast(Controls.Find("lb" & grp, True)(0), Label).Text = grp_holds(3)
+        ElseIf ((val(grp, 3) = val(grp, 5)) And (val(grp, 5) = val(grp, 9)) And val(grp, 9) <> "") Then
+            DirectCast(Controls.Find(pb & LCase(val(grp, 9)), True)(0), PictureBox).Visible = True
         End If
 
     End Function
 
     Public Function Checker(btnName, ind)
+        'get button address
+        Dim grp As Integer = Integer.Parse(ind(0).ToString)
+        Dim id As Integer = Integer.Parse(ind(1).ToString)
 
+        'check if button is still empty
         If String.IsNullOrEmpty(btnName.Text) Then
-            ' "Contains Empty value or Null Value"
 
-            ' check if whose turn is; true for X false for O
+            'check whose turn it is; true for X false for O
             If turn = True Then
                 btnName.Text = "X"
+                lbWho.Text = "O-TURN"
                 turn = False
+                val(grp, id) = "X" 'store to val array
             Else
                 btnName.Text = "O"
+                lbWho.Text = "X-TURN"
                 turn = True
+                val(grp, id) = "0" 'store to val array
             End If
         End If
 
-        MiniChecker(ind(0))
+        'check if certain 3x3 box is won
+        MiniChecker(grp)
 
         'REWORK THIS
         'Winning scenarios as a whole: 8
-        If (((lb1.Text = lb2.Text) And (lb2.Text = lb3.Text)) And lb1.Text <> "") Then
-            MessageBox.Show(lb1.Text + " wins")
+        'If (((lb1.Text = lb2.Text) And (lb2.Text = lb3.Text)) And lb1.Text <> "") Then
+        '    MessageBox.Show(lb1.Text + " wins")
 
-        ElseIf (((lb6.Text = lb5.Text) And (lb5.Text = lb4.Text)) And lb6.Text <> "") Then
-            MessageBox.Show(lb6.Text + " wins")
+        'ElseIf (((lb6.Text = lb5.Text) And (lb5.Text = lb4.Text)) And lb6.Text <> "") Then
+        '    MessageBox.Show(lb6.Text + " wins")
 
-        ElseIf (((lb7.Text = lb8.Text) And (lb8.Text = lb9.Text)) And lb7.Text <> "") Then
-            MessageBox.Show(lb7.Text + " wins")
+        'ElseIf (((lb7.Text = lb8.Text) And (lb8.Text = lb9.Text)) And lb7.Text <> "") Then
+        '    MessageBox.Show(lb7.Text + " wins")
 
-        ElseIf (((lb1.Text = lb6.Text) And (lb6.Text = lb9.Text)) And lb1.Text <> "") Then
-            MessageBox.Show(lb1.Text + " wins")
+        'ElseIf (((lb1.Text = lb6.Text) And (lb6.Text = lb9.Text)) And lb1.Text <> "") Then
+        '    MessageBox.Show(lb1.Text + " wins")
 
-        ElseIf (((lb2.Text = lb5.Text) And (lb5.Text = lb8.Text)) And lb2.Text <> "") Then
-            MessageBox.Show(lb2.Text + " wins")
+        'ElseIf (((lb2.Text = lb5.Text) And (lb5.Text = lb8.Text)) And lb2.Text <> "") Then
+        '    MessageBox.Show(lb2.Text + " wins")
 
-        ElseIf (((lb3.Text = lb4.Text) And (lb4.Text = lb7.Text)) And lb3.Text <> "") Then
-            MessageBox.Show(lb3.Text + " wins")
+        'ElseIf (((lb3.Text = lb4.Text) And (lb4.Text = lb7.Text)) And lb3.Text <> "") Then
+        '    MessageBox.Show(lb3.Text + " wins")
 
-        ElseIf (((lb1.Text = lb5.Text) And (lb5.Text = lb7.Text)) And lb1.Text <> "") Then
-            MessageBox.Show(lb1.Text + " wins")
+        'ElseIf (((lb1.Text = lb5.Text) And (lb5.Text = lb7.Text)) And lb1.Text <> "") Then
+        '    MessageBox.Show(lb1.Text + " wins")
 
-        ElseIf (((lb3.Text = lb5.Text) And (lb5.Text = lb9.Text)) And lb3.Text <> "") Then
-            MessageBox.Show(lb3.Text + " wins")
-        End If
+        'ElseIf (((lb3.Text = lb5.Text) And (lb5.Text = lb9.Text)) And lb3.Text <> "") Then
+        '    MessageBox.Show(lb3.Text + " wins")
+        'End If
 
         director(ind)
 
     End Function
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Timer1.Enabled = True
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles bt11.Click
         Checker(bt11, "11")
@@ -137,6 +133,7 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles bt12.Click
         Checker(bt12, "12")
+        GroupBox1.BorderColor = Color.Transparent
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles bt13.Click
@@ -167,23 +164,6 @@
         Checker(bt17, "17")
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        'For blinking text, or on or off with the help of timer
-        i += 1
-
-        If i = 2 Then
-            If turn = True Then
-                lbWho.Text = "X-TURN"
-            Else
-                lbWho.Text = "O-TURN"
-            End If
-
-        ElseIf i = 9 Then
-            lbWho.Text = ""
-            i = 0
-
-        End If
-    End Sub
     Private Sub bt21_Click(sender As Object, e As EventArgs) Handles bt21.Click
         Checker(bt21, "21")
     End Sub

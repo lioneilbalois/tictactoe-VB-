@@ -113,59 +113,68 @@ Partial Class Ulti
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lbWho = New System.Windows.Forms.Label()
         Me.GroupBox1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb1x = New System.Windows.Forms.PictureBox()
+        Me.pb1O = New System.Windows.Forms.PictureBox()
+        Me.pb1X = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb2x = New System.Windows.Forms.PictureBox()
+        Me.pb2O = New System.Windows.Forms.PictureBox()
+        Me.pb2X = New System.Windows.Forms.PictureBox()
         Me.GroupBox3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb3x = New System.Windows.Forms.PictureBox()
+        Me.pb3O = New System.Windows.Forms.PictureBox()
+        Me.pb3X = New System.Windows.Forms.PictureBox()
         Me.GroupBox4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb4x = New System.Windows.Forms.PictureBox()
+        Me.pb4O = New System.Windows.Forms.PictureBox()
+        Me.pb4X = New System.Windows.Forms.PictureBox()
         Me.GroupBox6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb6x = New System.Windows.Forms.PictureBox()
+        Me.pb6O = New System.Windows.Forms.PictureBox()
+        Me.pb6X = New System.Windows.Forms.PictureBox()
         Me.GroupBox5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb5x = New System.Windows.Forms.PictureBox()
+        Me.pb5O = New System.Windows.Forms.PictureBox()
+        Me.pb5X = New System.Windows.Forms.PictureBox()
         Me.GroupBox7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb7x = New System.Windows.Forms.PictureBox()
+        Me.pb7O = New System.Windows.Forms.PictureBox()
+        Me.pb7X = New System.Windows.Forms.PictureBox()
         Me.GroupBox9 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb9x = New System.Windows.Forms.PictureBox()
+        Me.pb9O = New System.Windows.Forms.PictureBox()
+        Me.pb9X = New System.Windows.Forms.PictureBox()
         Me.GroupBox8 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pb8x = New System.Windows.Forms.PictureBox()
-        Me.pb1o = New System.Windows.Forms.PictureBox()
-        Me.pb2o = New System.Windows.Forms.PictureBox()
-        Me.pb3o = New System.Windows.Forms.PictureBox()
-        Me.pb4o = New System.Windows.Forms.PictureBox()
-        Me.pb5o = New System.Windows.Forms.PictureBox()
-        Me.pb6o = New System.Windows.Forms.PictureBox()
-        Me.pb7o = New System.Windows.Forms.PictureBox()
-        Me.pb8o = New System.Windows.Forms.PictureBox()
-        Me.pb9o = New System.Windows.Forms.PictureBox()
+        Me.pb8O = New System.Windows.Forms.PictureBox()
+        Me.pb8X = New System.Windows.Forms.PictureBox()
+        Me.homePb = New System.Windows.Forms.PictureBox()
+        Me.drawPb = New System.Windows.Forms.PictureBox()
+        Me.resetPb = New System.Windows.Forms.PictureBox()
+        Me.helpPb = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.pb1x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb1O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb1X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.pb2x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb2O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb2X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.pb3x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb3O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb3X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
-        CType(Me.pb4x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb4O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb4X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
-        CType(Me.pb6x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb6O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb6X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox5.SuspendLayout()
-        CType(Me.pb5x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb5O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb5X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
-        CType(Me.pb7x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb7O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb7X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox9.SuspendLayout()
-        CType(Me.pb9x, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb9O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb9X, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox8.SuspendLayout()
-        CType(Me.pb8x, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb1o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb2o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb3o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb4o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb5o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb6o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb7o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb8o, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pb9o, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb8O, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb8X, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.homePb, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.drawPb, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.resetPb, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.helpPb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -1348,7 +1357,7 @@ Partial Class Ulti
         Me.p2LB.AutoSize = True
         Me.p2LB.BackColor = System.Drawing.Color.Transparent
         Me.p2LB.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.p2LB.Location = New System.Drawing.Point(157, 92)
+        Me.p2LB.Location = New System.Drawing.Point(343, 88)
         Me.p2LB.Name = "p2LB"
         Me.p2LB.Size = New System.Drawing.Size(19, 24)
         Me.p2LB.TabIndex = 49
@@ -1359,7 +1368,7 @@ Partial Class Ulti
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(136, 92)
+        Me.Label3.Location = New System.Drawing.Point(322, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(15, 24)
         Me.Label3.TabIndex = 48
@@ -1370,7 +1379,7 @@ Partial Class Ulti
         Me.p1Lb.AutoSize = True
         Me.p1Lb.BackColor = System.Drawing.Color.Transparent
         Me.p1Lb.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.p1Lb.Location = New System.Drawing.Point(111, 92)
+        Me.p1Lb.Location = New System.Drawing.Point(297, 88)
         Me.p1Lb.Name = "p1Lb"
         Me.p1Lb.Size = New System.Drawing.Size(19, 24)
         Me.p1Lb.TabIndex = 47
@@ -1381,7 +1390,7 @@ Partial Class Ulti
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(54, 68)
+        Me.Label4.Location = New System.Drawing.Point(241, 64)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(187, 24)
         Me.Label4.TabIndex = 46
@@ -1393,7 +1402,7 @@ Partial Class Ulti
         Me.lbWho.BackColor = System.Drawing.SystemColors.Window
         Me.lbWho.Font = New System.Drawing.Font("Balsamiq Sans", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbWho.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lbWho.Location = New System.Drawing.Point(86, 22)
+        Me.lbWho.Location = New System.Drawing.Point(313, 25)
         Me.lbWho.Name = "lbWho"
         Me.lbWho.Size = New System.Drawing.Size(118, 44)
         Me.lbWho.TabIndex = 45
@@ -1404,8 +1413,8 @@ Partial Class Ulti
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BorderThickness = 4
-        Me.GroupBox1.Controls.Add(Me.pb1o)
-        Me.GroupBox1.Controls.Add(Me.pb1x)
+        Me.GroupBox1.Controls.Add(Me.pb1O)
+        Me.GroupBox1.Controls.Add(Me.pb1X)
         Me.GroupBox1.Controls.Add(Me.bt11)
         Me.GroupBox1.Controls.Add(Me.bt12)
         Me.GroupBox1.Controls.Add(Me.bt17)
@@ -1421,24 +1430,35 @@ Partial Class Ulti
         Me.GroupBox1.Size = New System.Drawing.Size(179, 159)
         Me.GroupBox1.TabIndex = 50
         '
-        'pb1x
+        'pb1O
         '
-        Me.pb1x.Image = CType(resources.GetObject("pb1x.Image"), System.Drawing.Image)
-        Me.pb1x.Location = New System.Drawing.Point(20, 14)
-        Me.pb1x.Name = "pb1x"
-        Me.pb1x.Size = New System.Drawing.Size(148, 137)
-        Me.pb1x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb1x.TabIndex = 60
-        Me.pb1x.TabStop = False
-        Me.pb1x.Visible = False
+        Me.pb1O.Image = CType(resources.GetObject("pb1O.Image"), System.Drawing.Image)
+        Me.pb1O.Location = New System.Drawing.Point(20, 14)
+        Me.pb1O.Name = "pb1O"
+        Me.pb1O.Size = New System.Drawing.Size(148, 137)
+        Me.pb1O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb1O.TabIndex = 61
+        Me.pb1O.TabStop = False
+        Me.pb1O.Visible = False
+        '
+        'pb1X
+        '
+        Me.pb1X.Image = CType(resources.GetObject("pb1X.Image"), System.Drawing.Image)
+        Me.pb1X.Location = New System.Drawing.Point(20, 14)
+        Me.pb1X.Name = "pb1X"
+        Me.pb1X.Size = New System.Drawing.Size(148, 137)
+        Me.pb1X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb1X.TabIndex = 60
+        Me.pb1X.TabStop = False
+        Me.pb1X.Visible = False
         '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox2.BorderThickness = 4
-        Me.GroupBox2.Controls.Add(Me.pb2o)
-        Me.GroupBox2.Controls.Add(Me.pb2x)
+        Me.GroupBox2.Controls.Add(Me.pb2O)
+        Me.GroupBox2.Controls.Add(Me.pb2X)
         Me.GroupBox2.Controls.Add(Me.bt23)
         Me.GroupBox2.Controls.Add(Me.bt27)
         Me.GroupBox2.Controls.Add(Me.bt21)
@@ -1454,24 +1474,35 @@ Partial Class Ulti
         Me.GroupBox2.Size = New System.Drawing.Size(178, 159)
         Me.GroupBox2.TabIndex = 51
         '
-        'pb2x
+        'pb2O
         '
-        Me.pb2x.Image = CType(resources.GetObject("pb2x.Image"), System.Drawing.Image)
-        Me.pb2x.Location = New System.Drawing.Point(20, 14)
-        Me.pb2x.Name = "pb2x"
-        Me.pb2x.Size = New System.Drawing.Size(148, 137)
-        Me.pb2x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb2x.TabIndex = 61
-        Me.pb2x.TabStop = False
-        Me.pb2x.Visible = False
+        Me.pb2O.Image = CType(resources.GetObject("pb2O.Image"), System.Drawing.Image)
+        Me.pb2O.Location = New System.Drawing.Point(20, 14)
+        Me.pb2O.Name = "pb2O"
+        Me.pb2O.Size = New System.Drawing.Size(148, 137)
+        Me.pb2O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb2O.TabIndex = 62
+        Me.pb2O.TabStop = False
+        Me.pb2O.Visible = False
+        '
+        'pb2X
+        '
+        Me.pb2X.Image = CType(resources.GetObject("pb2X.Image"), System.Drawing.Image)
+        Me.pb2X.Location = New System.Drawing.Point(20, 14)
+        Me.pb2X.Name = "pb2X"
+        Me.pb2X.Size = New System.Drawing.Size(148, 137)
+        Me.pb2X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb2X.TabIndex = 61
+        Me.pb2X.TabStop = False
+        Me.pb2X.Visible = False
         '
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox3.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox3.BorderThickness = 4
-        Me.GroupBox3.Controls.Add(Me.pb3o)
-        Me.GroupBox3.Controls.Add(Me.pb3x)
+        Me.GroupBox3.Controls.Add(Me.pb3O)
+        Me.GroupBox3.Controls.Add(Me.pb3X)
         Me.GroupBox3.Controls.Add(Me.bt31)
         Me.GroupBox3.Controls.Add(Me.bt37)
         Me.GroupBox3.Controls.Add(Me.bt32)
@@ -1487,24 +1518,35 @@ Partial Class Ulti
         Me.GroupBox3.Size = New System.Drawing.Size(182, 159)
         Me.GroupBox3.TabIndex = 52
         '
-        'pb3x
+        'pb3O
         '
-        Me.pb3x.Image = CType(resources.GetObject("pb3x.Image"), System.Drawing.Image)
-        Me.pb3x.Location = New System.Drawing.Point(20, 14)
-        Me.pb3x.Name = "pb3x"
-        Me.pb3x.Size = New System.Drawing.Size(148, 137)
-        Me.pb3x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb3x.TabIndex = 61
-        Me.pb3x.TabStop = False
-        Me.pb3x.Visible = False
+        Me.pb3O.Image = CType(resources.GetObject("pb3O.Image"), System.Drawing.Image)
+        Me.pb3O.Location = New System.Drawing.Point(20, 14)
+        Me.pb3O.Name = "pb3O"
+        Me.pb3O.Size = New System.Drawing.Size(148, 137)
+        Me.pb3O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb3O.TabIndex = 63
+        Me.pb3O.TabStop = False
+        Me.pb3O.Visible = False
+        '
+        'pb3X
+        '
+        Me.pb3X.Image = CType(resources.GetObject("pb3X.Image"), System.Drawing.Image)
+        Me.pb3X.Location = New System.Drawing.Point(20, 14)
+        Me.pb3X.Name = "pb3X"
+        Me.pb3X.Size = New System.Drawing.Size(148, 137)
+        Me.pb3X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb3X.TabIndex = 61
+        Me.pb3X.TabStop = False
+        Me.pb3X.Visible = False
         '
         'GroupBox4
         '
         Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox4.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox4.BorderThickness = 4
-        Me.GroupBox4.Controls.Add(Me.pb4o)
-        Me.GroupBox4.Controls.Add(Me.pb4x)
+        Me.GroupBox4.Controls.Add(Me.pb4O)
+        Me.GroupBox4.Controls.Add(Me.pb4X)
         Me.GroupBox4.Controls.Add(Me.bt43)
         Me.GroupBox4.Controls.Add(Me.bt47)
         Me.GroupBox4.Controls.Add(Me.bt41)
@@ -1520,24 +1562,35 @@ Partial Class Ulti
         Me.GroupBox4.Size = New System.Drawing.Size(182, 148)
         Me.GroupBox4.TabIndex = 53
         '
-        'pb4x
+        'pb4O
         '
-        Me.pb4x.Image = CType(resources.GetObject("pb4x.Image"), System.Drawing.Image)
-        Me.pb4x.Location = New System.Drawing.Point(20, 7)
-        Me.pb4x.Name = "pb4x"
-        Me.pb4x.Size = New System.Drawing.Size(148, 137)
-        Me.pb4x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb4x.TabIndex = 61
-        Me.pb4x.TabStop = False
-        Me.pb4x.Visible = False
+        Me.pb4O.Image = CType(resources.GetObject("pb4O.Image"), System.Drawing.Image)
+        Me.pb4O.Location = New System.Drawing.Point(20, 7)
+        Me.pb4O.Name = "pb4O"
+        Me.pb4O.Size = New System.Drawing.Size(148, 137)
+        Me.pb4O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb4O.TabIndex = 64
+        Me.pb4O.TabStop = False
+        Me.pb4O.Visible = False
+        '
+        'pb4X
+        '
+        Me.pb4X.Image = CType(resources.GetObject("pb4X.Image"), System.Drawing.Image)
+        Me.pb4X.Location = New System.Drawing.Point(20, 7)
+        Me.pb4X.Name = "pb4X"
+        Me.pb4X.Size = New System.Drawing.Size(148, 137)
+        Me.pb4X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb4X.TabIndex = 61
+        Me.pb4X.TabStop = False
+        Me.pb4X.Visible = False
         '
         'GroupBox6
         '
         Me.GroupBox6.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox6.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox6.BorderThickness = 4
-        Me.GroupBox6.Controls.Add(Me.pb6o)
-        Me.GroupBox6.Controls.Add(Me.pb6x)
+        Me.GroupBox6.Controls.Add(Me.pb6O)
+        Me.GroupBox6.Controls.Add(Me.pb6X)
         Me.GroupBox6.Controls.Add(Me.bt61)
         Me.GroupBox6.Controls.Add(Me.bt67)
         Me.GroupBox6.Controls.Add(Me.bt62)
@@ -1553,24 +1606,35 @@ Partial Class Ulti
         Me.GroupBox6.Size = New System.Drawing.Size(179, 148)
         Me.GroupBox6.TabIndex = 54
         '
-        'pb6x
+        'pb6O
         '
-        Me.pb6x.Image = CType(resources.GetObject("pb6x.Image"), System.Drawing.Image)
-        Me.pb6x.Location = New System.Drawing.Point(20, 7)
-        Me.pb6x.Name = "pb6x"
-        Me.pb6x.Size = New System.Drawing.Size(148, 137)
-        Me.pb6x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb6x.TabIndex = 61
-        Me.pb6x.TabStop = False
-        Me.pb6x.Visible = False
+        Me.pb6O.Image = CType(resources.GetObject("pb6O.Image"), System.Drawing.Image)
+        Me.pb6O.Location = New System.Drawing.Point(20, 7)
+        Me.pb6O.Name = "pb6O"
+        Me.pb6O.Size = New System.Drawing.Size(148, 137)
+        Me.pb6O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb6O.TabIndex = 66
+        Me.pb6O.TabStop = False
+        Me.pb6O.Visible = False
+        '
+        'pb6X
+        '
+        Me.pb6X.Image = CType(resources.GetObject("pb6X.Image"), System.Drawing.Image)
+        Me.pb6X.Location = New System.Drawing.Point(20, 7)
+        Me.pb6X.Name = "pb6X"
+        Me.pb6X.Size = New System.Drawing.Size(148, 137)
+        Me.pb6X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb6X.TabIndex = 61
+        Me.pb6X.TabStop = False
+        Me.pb6X.Visible = False
         '
         'GroupBox5
         '
         Me.GroupBox5.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox5.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox5.BorderThickness = 4
-        Me.GroupBox5.Controls.Add(Me.pb5o)
-        Me.GroupBox5.Controls.Add(Me.pb5x)
+        Me.GroupBox5.Controls.Add(Me.pb5O)
+        Me.GroupBox5.Controls.Add(Me.pb5X)
         Me.GroupBox5.Controls.Add(Me.bt52)
         Me.GroupBox5.Controls.Add(Me.bt57)
         Me.GroupBox5.Controls.Add(Me.bt51)
@@ -1586,24 +1650,35 @@ Partial Class Ulti
         Me.GroupBox5.Size = New System.Drawing.Size(178, 148)
         Me.GroupBox5.TabIndex = 55
         '
-        'pb5x
+        'pb5O
         '
-        Me.pb5x.Image = CType(resources.GetObject("pb5x.Image"), System.Drawing.Image)
-        Me.pb5x.Location = New System.Drawing.Point(20, 7)
-        Me.pb5x.Name = "pb5x"
-        Me.pb5x.Size = New System.Drawing.Size(148, 137)
-        Me.pb5x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb5x.TabIndex = 61
-        Me.pb5x.TabStop = False
-        Me.pb5x.Visible = False
+        Me.pb5O.Image = CType(resources.GetObject("pb5O.Image"), System.Drawing.Image)
+        Me.pb5O.Location = New System.Drawing.Point(20, 7)
+        Me.pb5O.Name = "pb5O"
+        Me.pb5O.Size = New System.Drawing.Size(148, 137)
+        Me.pb5O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb5O.TabIndex = 65
+        Me.pb5O.TabStop = False
+        Me.pb5O.Visible = False
+        '
+        'pb5X
+        '
+        Me.pb5X.Image = CType(resources.GetObject("pb5X.Image"), System.Drawing.Image)
+        Me.pb5X.Location = New System.Drawing.Point(20, 7)
+        Me.pb5X.Name = "pb5X"
+        Me.pb5X.Size = New System.Drawing.Size(148, 137)
+        Me.pb5X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb5X.TabIndex = 61
+        Me.pb5X.TabStop = False
+        Me.pb5X.Visible = False
         '
         'GroupBox7
         '
         Me.GroupBox7.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox7.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox7.BorderThickness = 4
-        Me.GroupBox7.Controls.Add(Me.pb7o)
-        Me.GroupBox7.Controls.Add(Me.pb7x)
+        Me.GroupBox7.Controls.Add(Me.pb7O)
+        Me.GroupBox7.Controls.Add(Me.pb7X)
         Me.GroupBox7.Controls.Add(Me.bt73)
         Me.GroupBox7.Controls.Add(Me.bt77)
         Me.GroupBox7.Controls.Add(Me.bt71)
@@ -1619,24 +1694,35 @@ Partial Class Ulti
         Me.GroupBox7.Size = New System.Drawing.Size(182, 154)
         Me.GroupBox7.TabIndex = 56
         '
-        'pb7x
+        'pb7O
         '
-        Me.pb7x.Image = CType(resources.GetObject("pb7x.Image"), System.Drawing.Image)
-        Me.pb7x.Location = New System.Drawing.Point(20, 7)
-        Me.pb7x.Name = "pb7x"
-        Me.pb7x.Size = New System.Drawing.Size(148, 137)
-        Me.pb7x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb7x.TabIndex = 61
-        Me.pb7x.TabStop = False
-        Me.pb7x.Visible = False
+        Me.pb7O.Image = CType(resources.GetObject("pb7O.Image"), System.Drawing.Image)
+        Me.pb7O.Location = New System.Drawing.Point(20, 7)
+        Me.pb7O.Name = "pb7O"
+        Me.pb7O.Size = New System.Drawing.Size(148, 137)
+        Me.pb7O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb7O.TabIndex = 67
+        Me.pb7O.TabStop = False
+        Me.pb7O.Visible = False
+        '
+        'pb7X
+        '
+        Me.pb7X.Image = CType(resources.GetObject("pb7X.Image"), System.Drawing.Image)
+        Me.pb7X.Location = New System.Drawing.Point(20, 7)
+        Me.pb7X.Name = "pb7X"
+        Me.pb7X.Size = New System.Drawing.Size(148, 137)
+        Me.pb7X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb7X.TabIndex = 61
+        Me.pb7X.TabStop = False
+        Me.pb7X.Visible = False
         '
         'GroupBox9
         '
         Me.GroupBox9.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox9.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox9.BorderThickness = 4
-        Me.GroupBox9.Controls.Add(Me.pb9o)
-        Me.GroupBox9.Controls.Add(Me.pb9x)
+        Me.GroupBox9.Controls.Add(Me.pb9O)
+        Me.GroupBox9.Controls.Add(Me.pb9X)
         Me.GroupBox9.Controls.Add(Me.bt92)
         Me.GroupBox9.Controls.Add(Me.bt97)
         Me.GroupBox9.Controls.Add(Me.bt91)
@@ -1652,24 +1738,35 @@ Partial Class Ulti
         Me.GroupBox9.Size = New System.Drawing.Size(179, 154)
         Me.GroupBox9.TabIndex = 57
         '
-        'pb9x
+        'pb9O
         '
-        Me.pb9x.Image = CType(resources.GetObject("pb9x.Image"), System.Drawing.Image)
-        Me.pb9x.Location = New System.Drawing.Point(20, 7)
-        Me.pb9x.Name = "pb9x"
-        Me.pb9x.Size = New System.Drawing.Size(148, 137)
-        Me.pb9x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb9x.TabIndex = 61
-        Me.pb9x.TabStop = False
-        Me.pb9x.Visible = False
+        Me.pb9O.Image = CType(resources.GetObject("pb9O.Image"), System.Drawing.Image)
+        Me.pb9O.Location = New System.Drawing.Point(20, 7)
+        Me.pb9O.Name = "pb9O"
+        Me.pb9O.Size = New System.Drawing.Size(148, 137)
+        Me.pb9O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb9O.TabIndex = 69
+        Me.pb9O.TabStop = False
+        Me.pb9O.Visible = False
+        '
+        'pb9X
+        '
+        Me.pb9X.Image = CType(resources.GetObject("pb9X.Image"), System.Drawing.Image)
+        Me.pb9X.Location = New System.Drawing.Point(20, 7)
+        Me.pb9X.Name = "pb9X"
+        Me.pb9X.Size = New System.Drawing.Size(148, 137)
+        Me.pb9X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb9X.TabIndex = 61
+        Me.pb9X.TabStop = False
+        Me.pb9X.Visible = False
         '
         'GroupBox8
         '
         Me.GroupBox8.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox8.BorderColor = System.Drawing.Color.Transparent
         Me.GroupBox8.BorderThickness = 4
-        Me.GroupBox8.Controls.Add(Me.pb8o)
-        Me.GroupBox8.Controls.Add(Me.pb8x)
+        Me.GroupBox8.Controls.Add(Me.pb8O)
+        Me.GroupBox8.Controls.Add(Me.pb8X)
         Me.GroupBox8.Controls.Add(Me.bt83)
         Me.GroupBox8.Controls.Add(Me.bt87)
         Me.GroupBox8.Controls.Add(Me.bt81)
@@ -1685,115 +1782,82 @@ Partial Class Ulti
         Me.GroupBox8.Size = New System.Drawing.Size(178, 154)
         Me.GroupBox8.TabIndex = 58
         '
-        'pb8x
+        'pb8O
         '
-        Me.pb8x.Image = CType(resources.GetObject("pb8x.Image"), System.Drawing.Image)
-        Me.pb8x.Location = New System.Drawing.Point(20, 7)
-        Me.pb8x.Name = "pb8x"
-        Me.pb8x.Size = New System.Drawing.Size(148, 137)
-        Me.pb8x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb8x.TabIndex = 61
-        Me.pb8x.TabStop = False
-        Me.pb8x.Visible = False
+        Me.pb8O.Image = CType(resources.GetObject("pb8O.Image"), System.Drawing.Image)
+        Me.pb8O.Location = New System.Drawing.Point(20, 7)
+        Me.pb8O.Name = "pb8O"
+        Me.pb8O.Size = New System.Drawing.Size(148, 137)
+        Me.pb8O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb8O.TabIndex = 68
+        Me.pb8O.TabStop = False
+        Me.pb8O.Visible = False
         '
-        'pb1o
+        'pb8X
         '
-        Me.pb1o.Image = CType(resources.GetObject("pb1o.Image"), System.Drawing.Image)
-        Me.pb1o.Location = New System.Drawing.Point(20, 14)
-        Me.pb1o.Name = "pb1o"
-        Me.pb1o.Size = New System.Drawing.Size(148, 137)
-        Me.pb1o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb1o.TabIndex = 61
-        Me.pb1o.TabStop = False
-        Me.pb1o.Visible = False
+        Me.pb8X.Image = CType(resources.GetObject("pb8X.Image"), System.Drawing.Image)
+        Me.pb8X.Location = New System.Drawing.Point(20, 7)
+        Me.pb8X.Name = "pb8X"
+        Me.pb8X.Size = New System.Drawing.Size(148, 137)
+        Me.pb8X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb8X.TabIndex = 61
+        Me.pb8X.TabStop = False
+        Me.pb8X.Visible = False
         '
-        'pb2o
+        'homePb
         '
-        Me.pb2o.Image = CType(resources.GetObject("pb2o.Image"), System.Drawing.Image)
-        Me.pb2o.Location = New System.Drawing.Point(20, 14)
-        Me.pb2o.Name = "pb2o"
-        Me.pb2o.Size = New System.Drawing.Size(148, 137)
-        Me.pb2o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb2o.TabIndex = 62
-        Me.pb2o.TabStop = False
-        Me.pb2o.Visible = False
+        Me.homePb.BackColor = System.Drawing.Color.Transparent
+        Me.homePb.Image = CType(resources.GetObject("homePb.Image"), System.Drawing.Image)
+        Me.homePb.Location = New System.Drawing.Point(13, 32)
+        Me.homePb.Name = "homePb"
+        Me.homePb.Size = New System.Drawing.Size(35, 32)
+        Me.homePb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.homePb.TabIndex = 59
+        Me.homePb.TabStop = False
         '
-        'pb3o
+        'drawPb
         '
-        Me.pb3o.Image = CType(resources.GetObject("pb3o.Image"), System.Drawing.Image)
-        Me.pb3o.Location = New System.Drawing.Point(20, 14)
-        Me.pb3o.Name = "pb3o"
-        Me.pb3o.Size = New System.Drawing.Size(148, 137)
-        Me.pb3o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb3o.TabIndex = 63
-        Me.pb3o.TabStop = False
-        Me.pb3o.Visible = False
+        Me.drawPb.BackColor = System.Drawing.Color.Transparent
+        Me.drawPb.Image = CType(resources.GetObject("drawPb.Image"), System.Drawing.Image)
+        Me.drawPb.Location = New System.Drawing.Point(607, 113)
+        Me.drawPb.Name = "drawPb"
+        Me.drawPb.Size = New System.Drawing.Size(49, 50)
+        Me.drawPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.drawPb.TabIndex = 62
+        Me.drawPb.TabStop = False
         '
-        'pb4o
+        'resetPb
         '
-        Me.pb4o.Image = CType(resources.GetObject("pb4o.Image"), System.Drawing.Image)
-        Me.pb4o.Location = New System.Drawing.Point(20, 7)
-        Me.pb4o.Name = "pb4o"
-        Me.pb4o.Size = New System.Drawing.Size(148, 137)
-        Me.pb4o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb4o.TabIndex = 64
-        Me.pb4o.TabStop = False
-        Me.pb4o.Visible = False
+        Me.resetPb.BackColor = System.Drawing.Color.Transparent
+        Me.resetPb.Image = CType(resources.GetObject("resetPb.Image"), System.Drawing.Image)
+        Me.resetPb.Location = New System.Drawing.Point(613, 77)
+        Me.resetPb.Name = "resetPb"
+        Me.resetPb.Size = New System.Drawing.Size(33, 33)
+        Me.resetPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.resetPb.TabIndex = 61
+        Me.resetPb.TabStop = False
         '
-        'pb5o
+        'helpPb
         '
-        Me.pb5o.Image = CType(resources.GetObject("pb5o.Image"), System.Drawing.Image)
-        Me.pb5o.Location = New System.Drawing.Point(20, 7)
-        Me.pb5o.Name = "pb5o"
-        Me.pb5o.Size = New System.Drawing.Size(148, 137)
-        Me.pb5o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb5o.TabIndex = 65
-        Me.pb5o.TabStop = False
-        Me.pb5o.Visible = False
+        Me.helpPb.BackColor = System.Drawing.Color.Transparent
+        Me.helpPb.Image = CType(resources.GetObject("helpPb.Image"), System.Drawing.Image)
+        Me.helpPb.Location = New System.Drawing.Point(612, 38)
+        Me.helpPb.Name = "helpPb"
+        Me.helpPb.Size = New System.Drawing.Size(36, 33)
+        Me.helpPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.helpPb.TabIndex = 60
+        Me.helpPb.TabStop = False
         '
-        'pb6o
+        'Label2
         '
-        Me.pb6o.Image = CType(resources.GetObject("pb6o.Image"), System.Drawing.Image)
-        Me.pb6o.Location = New System.Drawing.Point(20, 7)
-        Me.pb6o.Name = "pb6o"
-        Me.pb6o.Size = New System.Drawing.Size(148, 137)
-        Me.pb6o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb6o.TabIndex = 66
-        Me.pb6o.TabStop = False
-        Me.pb6o.Visible = False
-        '
-        'pb7o
-        '
-        Me.pb7o.Image = CType(resources.GetObject("pb7o.Image"), System.Drawing.Image)
-        Me.pb7o.Location = New System.Drawing.Point(20, 7)
-        Me.pb7o.Name = "pb7o"
-        Me.pb7o.Size = New System.Drawing.Size(148, 137)
-        Me.pb7o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb7o.TabIndex = 67
-        Me.pb7o.TabStop = False
-        Me.pb7o.Visible = False
-        '
-        'pb8o
-        '
-        Me.pb8o.Image = CType(resources.GetObject("pb8o.Image"), System.Drawing.Image)
-        Me.pb8o.Location = New System.Drawing.Point(20, 7)
-        Me.pb8o.Name = "pb8o"
-        Me.pb8o.Size = New System.Drawing.Size(148, 137)
-        Me.pb8o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb8o.TabIndex = 68
-        Me.pb8o.TabStop = False
-        Me.pb8o.Visible = False
-        '
-        'pb9o
-        '
-        Me.pb9o.Image = CType(resources.GetObject("pb9o.Image"), System.Drawing.Image)
-        Me.pb9o.Location = New System.Drawing.Point(20, 7)
-        Me.pb9o.Name = "pb9o"
-        Me.pb9o.Size = New System.Drawing.Size(148, 137)
-        Me.pb9o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb9o.TabIndex = 69
-        Me.pb9o.TabStop = False
-        Me.pb9o.Visible = False
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(230, 35)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(81, 24)
+        Me.Label2.TabIndex = 63
+        Me.Label2.Text = "Time Here"
         '
         'Ulti
         '
@@ -1803,6 +1867,11 @@ Partial Class Ulti
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(666, 621)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.drawPb)
+        Me.Controls.Add(Me.resetPb)
+        Me.Controls.Add(Me.helpPb)
+        Me.Controls.Add(Me.homePb)
         Me.Controls.Add(Me.GroupBox8)
         Me.Controls.Add(Me.GroupBox9)
         Me.Controls.Add(Me.GroupBox7)
@@ -1826,32 +1895,36 @@ Partial Class Ulti
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TicTacToe"
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.pb1x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb1O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb1X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.pb2x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb2O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb2X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
-        CType(Me.pb3x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb3O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb3X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
-        CType(Me.pb4x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb4O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb4X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
-        CType(Me.pb6x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb6O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb6X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox5.ResumeLayout(False)
-        CType(Me.pb5x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb5O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb5X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox7.ResumeLayout(False)
-        CType(Me.pb7x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb7O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb7X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox9.ResumeLayout(False)
-        CType(Me.pb9x, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb9O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb9X, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox8.ResumeLayout(False)
-        CType(Me.pb8x, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb1o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb2o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb3o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb4o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb5o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb6o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb7o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb8o, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pb9o, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb8O, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb8X, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.homePb, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.drawPb, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.resetPb, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.helpPb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1954,22 +2027,27 @@ Partial Class Ulti
     Friend WithEvents GroupBox7 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents GroupBox9 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents GroupBox8 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents pb1x As PictureBox
-    Friend WithEvents pb2x As PictureBox
-    Friend WithEvents pb3x As PictureBox
-    Friend WithEvents pb4x As PictureBox
-    Friend WithEvents pb6x As PictureBox
-    Friend WithEvents pb5x As PictureBox
-    Friend WithEvents pb7x As PictureBox
-    Friend WithEvents pb9x As PictureBox
-    Friend WithEvents pb8x As PictureBox
-    Friend WithEvents pb1o As PictureBox
-    Friend WithEvents pb2o As PictureBox
-    Friend WithEvents pb3o As PictureBox
-    Friend WithEvents pb4o As PictureBox
-    Friend WithEvents pb6o As PictureBox
-    Friend WithEvents pb5o As PictureBox
-    Friend WithEvents pb7o As PictureBox
-    Friend WithEvents pb9o As PictureBox
-    Friend WithEvents pb8o As PictureBox
+    Friend WithEvents pb1X As PictureBox
+    Friend WithEvents pb2X As PictureBox
+    Friend WithEvents pb3X As PictureBox
+    Friend WithEvents pb4X As PictureBox
+    Friend WithEvents pb6X As PictureBox
+    Friend WithEvents pb5X As PictureBox
+    Friend WithEvents pb7X As PictureBox
+    Friend WithEvents pb9X As PictureBox
+    Friend WithEvents pb8X As PictureBox
+    Friend WithEvents pb1O As PictureBox
+    Friend WithEvents pb2O As PictureBox
+    Friend WithEvents pb3O As PictureBox
+    Friend WithEvents pb4O As PictureBox
+    Friend WithEvents pb6O As PictureBox
+    Friend WithEvents pb5O As PictureBox
+    Friend WithEvents pb7O As PictureBox
+    Friend WithEvents pb9O As PictureBox
+    Friend WithEvents pb8O As PictureBox
+    Friend WithEvents homePb As PictureBox
+    Friend WithEvents drawPb As PictureBox
+    Friend WithEvents resetPb As PictureBox
+    Friend WithEvents helpPb As PictureBox
+    Friend WithEvents Label2 As Label
 End Class

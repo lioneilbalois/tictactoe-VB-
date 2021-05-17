@@ -35,7 +35,6 @@ Partial Class Basic
         Me.lbWho = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.p1Lb = New System.Windows.Forms.Label()
-        Me.drawBt = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.p2LB = New System.Windows.Forms.Label()
         Me.homePb = New System.Windows.Forms.PictureBox()
@@ -43,9 +42,11 @@ Partial Class Basic
         Me.resetPb = New System.Windows.Forms.PictureBox()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.drawPb = New System.Windows.Forms.PictureBox()
         CType(Me.homePb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.helpPb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.resetPb, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.drawPb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button7
@@ -208,18 +209,6 @@ Partial Class Basic
         Me.p1Lb.TabIndex = 41
         Me.p1Lb.Text = "0"
         '
-        'drawBt
-        '
-        Me.drawBt.BackColor = System.Drawing.SystemColors.Window
-        Me.drawBt.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.drawBt.Font = New System.Drawing.Font("Balsamiq Sans", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.drawBt.Location = New System.Drawing.Point(382, 130)
-        Me.drawBt.Name = "drawBt"
-        Me.drawBt.Size = New System.Drawing.Size(59, 32)
-        Me.drawBt.TabIndex = 42
-        Me.drawBt.Text = "Draw"
-        Me.drawBt.UseVisualStyleBackColor = False
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -308,6 +297,17 @@ Partial Class Basic
         Me.Guna2ControlBox1.TabIndex = 35
         Me.Guna2ControlBox1.UseTransparentBackground = True
         '
+        'drawPb
+        '
+        Me.drawPb.BackColor = System.Drawing.Color.Transparent
+        Me.drawPb.Image = CType(resources.GetObject("drawPb.Image"), System.Drawing.Image)
+        Me.drawPb.Location = New System.Drawing.Point(393, 132)
+        Me.drawPb.Name = "drawPb"
+        Me.drawPb.Size = New System.Drawing.Size(55, 56)
+        Me.drawPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.drawPb.TabIndex = 48
+        Me.drawPb.TabStop = False
+        '
         'Basic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -316,6 +316,7 @@ Partial Class Basic
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(479, 491)
         Me.ControlBox = False
+        Me.Controls.Add(Me.drawPb)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Guna2ControlBox2)
         Me.Controls.Add(Me.resetPb)
@@ -323,7 +324,6 @@ Partial Class Basic
         Me.Controls.Add(Me.homePb)
         Me.Controls.Add(Me.p2LB)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.drawBt)
         Me.Controls.Add(Me.p1Lb)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button7)
@@ -344,6 +344,7 @@ Partial Class Basic
         CType(Me.homePb, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.helpPb, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.resetPb, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.drawPb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -360,7 +361,6 @@ Partial Class Basic
     Friend WithEvents lbWho As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents p1Lb As Label
-    Friend WithEvents drawBt As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents p2LB As Label
     Friend WithEvents homePb As PictureBox
@@ -368,4 +368,5 @@ Partial Class Basic
     Friend WithEvents resetPb As PictureBox
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents drawPb As PictureBox
 End Class

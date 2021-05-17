@@ -141,7 +141,11 @@
         End If
     End Sub
 
-    Private Sub drawBt_Click(sender As Object, e As EventArgs) Handles drawBt.Click
+    Public Function incr()
+        nround += 1 'to increment round, or winpop to access nround
+    End Function
+
+    Private Sub drawPb_Click(sender As Object, e As EventArgs) Handles drawPb.Click
         'draw, increment round to change first turn
         Dim ask As DialogResult = MessageBox.Show("Yo sure? Accept draw?",
                             "Draw",
@@ -152,9 +156,4 @@
             reset()
         End If
     End Sub
-
-    Public Function incr()
-        nround += 1 'to increment round, or winpop to access nround
-    End Function
-
 End Class

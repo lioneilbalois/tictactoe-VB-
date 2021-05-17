@@ -1,18 +1,37 @@
 ﻿Public Class Ulti
-    Dim turn As Boolean = True 'serves as switch, from x to o
-    Dim i As Integer ' for blinking text 
     Dim val(9, 9) As Char 'holds the value of the smallest box (group, specific box)
+    Dim hasWon(9) As Boolean 'specifies if grp is already won or not
+    Dim nround As Integer = 1 'current round no.
     Public Function director(place)
+        'RESTRICT: turn off other buttons/groupbox
+        'dont turn off destination (grp):
+        Dim grp As Integer = CInt(place) Mod 10
+
+        'check if destination is already won, if yes dont restrict
+        If (hasWon(grp) = True) Then
+            'reset color of current grp
+            Me.Controls("GroupBox" & place(0)).BorderColor = Color.Transparent
+
+            'enable disabled buttons due to restriction
+            For gid As Integer = 1 To 9
+                'only enable not won grp
+                If (hasWon(gid) = False) Then
+                    Me.Controls("GroupBox" & gid.ToString).Controls.OfType(Of Button).All(Function(b)
+
+                                                                                              b.Enabled = True
+                                                                                              Return True
+
+                                                                                          End Function)
+                End If
+            Next
+            Exit Function
+        End If
 
         'reset color of current grp
         Me.Controls("GroupBox" & place(0)).BorderColor = Color.Transparent
 
         'highlight which block where the next player will move
         Me.Controls("GroupBox" & place(1)).BorderColor = Color.Black
-
-        'RESTRICT: turn off other buttons/groupbox
-        'dont turn off destination:
-        Dim grp As Integer = CInt(place) Mod 10
 
         For gid As Integer = 1 To 9
             If (gid = grp) Then
@@ -40,89 +59,107 @@
     End Function
 
     Public Function MiniChecker(grp)
-
         Dim pb As String = "pb" + CStr(grp) 'picture box name for winned grp
 
         'check if the group Is won, Winning scenarios: 8
-        If ((val(grp, 1) = val(grp, 2)) And (val(grp, 2) = val(grp, 3)) And val(grp, 1) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 1)), True)(0), PictureBox).Visible = True
+        If ((val(grp, 1) = val(grp, 2)) And (val(grp, 2) = val(grp, 3)) And val(grp, 1) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 1)
+            DirectCast(Controls.Find(pb & (val(grp, 1)), True)(0), PictureBox).Visible = True
 
-        ElseIf ((val(grp, 6) = val(grp, 5)) And (val(grp, 5) = val(grp, 4)) And val(grp, 6) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 6)), True)(0), PictureBox).Visible = True
+        ElseIf ((val(grp, 6) = val(grp, 5)) And (val(grp, 5) = val(grp, 4)) And val(grp, 6) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 6)
+            DirectCast(Controls.Find(pb & val(grp, 6), True)(0), PictureBox).Visible = True
 
-        ElseIf ((val(grp, 9) = val(grp, 8)) And (val(grp, 8) = val(grp, 7)) And val(grp, 9) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 9)), True)(0), PictureBox).Visible = True
+        ElseIf ((val(grp, 9) = val(grp, 8)) And (val(grp, 8) = val(grp, 7)) And val(grp, 9) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 9)
+            DirectCast(Controls.Find(pb & val(grp, 9), True)(0), PictureBox).Visible = True
 
-        ElseIf ((val(grp, 1) = val(grp, 6)) And (val(grp, 6) = val(grp, 9)) And val(grp, 6) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 6)), True)(0), PictureBox).Visible = True
+        ElseIf ((val(grp, 1) = val(grp, 6)) And (val(grp, 6) = val(grp, 9)) And val(grp, 6) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 6)
+            DirectCast(Controls.Find(pb & val(grp, 6), True)(0), PictureBox).Visible = True
 
-        ElseIf ((val(grp, 2) = val(grp, 5)) And (val(grp, 5) = val(grp, 8)) And val(grp, 8) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 8)), True)(0), PictureBox).Visible = True
+        ElseIf ((val(grp, 2) = val(grp, 5)) And (val(grp, 5) = val(grp, 8)) And val(grp, 8) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 2)
+            DirectCast(Controls.Find(pb & val(grp, 8), True)(0), PictureBox).Visible = True
 
-        ElseIf ((val(grp, 3) = val(grp, 4)) And (val(grp, 4) = val(grp, 7)) And val(grp, 3) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 3)), True)(0), PictureBox).Visible = True
+        ElseIf ((val(grp, 3) = val(grp, 4)) And (val(grp, 4) = val(grp, 7)) And val(grp, 3) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 3)
+            DirectCast(Controls.Find(pb & val(grp, 3), True)(0), PictureBox).Visible = True
 
-        ElseIf ((val(grp, 1) = val(grp, 5)) And (val(grp, 5) = val(grp, 7)) And val(grp, 7) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 7)), True)(0), PictureBox).Visible = True
+        ElseIf ((val(grp, 1) = val(grp, 5)) And (val(grp, 5) = val(grp, 7)) And val(grp, 7) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 1)
+            DirectCast(Controls.Find(pb & val(grp, 7), True)(0), PictureBox).Visible = True
 
-        ElseIf ((val(grp, 3) = val(grp, 5)) And (val(grp, 5) = val(grp, 9)) And val(grp, 9) <> "") Then
-            DirectCast(Controls.Find(pb & LCase(val(grp, 9)), True)(0), PictureBox).Visible = True
+        ElseIf ((val(grp, 3) = val(grp, 5)) And (val(grp, 5) = val(grp, 9)) And val(grp, 9) <> "A") Then
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 3)
+            DirectCast(Controls.Find(pb & val(grp, 9), True)(0), PictureBox).Visible = True
+        End If
+    End Function
+    Public Function ender(who)
+        lbWho.Text = ""
+        If who = "X" Then
+            p1Lb.Text = CInt(p1Lb.Text) + 1
+        ElseIf who = "O" Then
+            p2LB.Text = CInt(p2LB.Text) + 1
         End If
 
+        winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
+        winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
+        winpop.ShowDialog()
     End Function
 
     Public Function Checker(btnName, ind)
-        'get button address
-        Dim grp As Integer = Integer.Parse(ind(0).ToString)
-        Dim id As Integer = Integer.Parse(ind(1).ToString)
+        'get selected button address
+        Dim grp As Integer = Integer.Parse(ind(0).ToString) 'button grp
+        Dim id As Integer = Integer.Parse(ind(1).ToString) ' button among that grp
 
         'check if button is still empty
         If String.IsNullOrEmpty(btnName.Text) Then
 
-            'check whose turn it is; true for X false for O
-            If turn = True Then
+            'check whose turn it is
+            If lbWho.Text = "X-TURN" Then
                 btnName.Text = "X"
                 lbWho.Text = "O-TURN"
-                turn = False
                 val(grp, id) = "X" 'store to val array
             Else
                 btnName.Text = "O"
                 lbWho.Text = "X-TURN"
-                turn = True
-                val(grp, id) = "0" 'store to val array
+                val(grp, id) = "O" 'store to val array
             End If
         End If
 
         'check if certain 3x3 box is won
         MiniChecker(grp)
 
-        'REWORK THIS
+        'check if larger box is won
         'Winning scenarios as a whole: 8
-        'If (((lb1.Text = lb2.Text) And (lb2.Text = lb3.Text)) And lb1.Text <> "") Then
-        '    MessageBox.Show(lb1.Text + " wins")
+        If ((val(0, 1) = val(0, 2)) And (val(0, 2) = val(0, 3)) And (val(0, 1) <> "A")) Then
+            ender()
+        ElseIf ((val(0, 4) = val(0, 5)) And (val(0, 5) = val(0, 6)) And (val(0, 4) <> "A")) Then
 
-        'ElseIf (((lb6.Text = lb5.Text) And (lb5.Text = lb4.Text)) And lb6.Text <> "") Then
-        '    MessageBox.Show(lb6.Text + " wins")
+        ElseIf ((val(0, 7) = val(0, 8)) And (val(0, 8) = val(0, 9)) And (val(0, 7) <> "A")) Then
 
-        'ElseIf (((lb7.Text = lb8.Text) And (lb8.Text = lb9.Text)) And lb7.Text <> "") Then
-        '    MessageBox.Show(lb7.Text + " wins")
+        ElseIf ((val(0, 1) = val(0, 6)) And (val(0, 6) = val(0, 9)) And (val(0, 1) <> "A")) Then
 
-        'ElseIf (((lb1.Text = lb6.Text) And (lb6.Text = lb9.Text)) And lb1.Text <> "") Then
-        '    MessageBox.Show(lb1.Text + " wins")
+        ElseIf ((val(0, 2) = val(0, 5)) And (val(0, 5) = val(0, 8)) And (val(0, 2) <> "A")) Then
 
-        'ElseIf (((lb2.Text = lb5.Text) And (lb5.Text = lb8.Text)) And lb2.Text <> "") Then
-        '    MessageBox.Show(lb2.Text + " wins")
+        ElseIf ((val(0, 3) = val(0, 4)) And (val(0, 4) = val(0, 7)) And (val(0, 3) <> "A")) Then
 
-        'ElseIf (((lb3.Text = lb4.Text) And (lb4.Text = lb7.Text)) And lb3.Text <> "") Then
-        '    MessageBox.Show(lb3.Text + " wins")
+        ElseIf ((val(0, 1) = val(0, 5)) And (val(0, 5) = val(0, 7)) And (val(0, 1) <> "A")) Then
 
-        'ElseIf (((lb1.Text = lb5.Text) And (lb5.Text = lb7.Text)) And lb1.Text <> "") Then
-        '    MessageBox.Show(lb1.Text + " wins")
+        ElseIf ((val(0, 3) = val(0, 5)) And (val(0, 5) = val(0, 8)) And (val(0, 3) <> "A")) Then
 
-        'ElseIf (((lb3.Text = lb5.Text) And (lb5.Text = lb9.Text)) And lb3.Text <> "") Then
-        '    MessageBox.Show(lb3.Text + " wins")
-        'End If
+        End If
 
+        'to point next player to designated box/grp
         director(ind)
 
     End Function
@@ -133,7 +170,6 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles bt12.Click
         Checker(bt12, "12")
-        GroupBox1.BorderColor = Color.Transparent
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles bt13.Click
@@ -379,5 +415,31 @@
     End Sub
     Private Sub bt99_Click(sender As Object, e As EventArgs) Handles bt99.Click
         Checker(bt99, "99")
+    End Sub
+
+    Private Sub Ulti_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'initialize 2d array for buttons values
+        For i As Integer = 0 To 9
+            For x As Integer = 0 To 9
+                val(i, x) = "A"
+            Next
+        Next
+
+        'initialize 9 grp array to false 
+        For i As Integer = 1 To 9
+            hasWon(1) = False
+        Next
+        'DirectCast(Controls.Find("pb1O", True)(0), PictureBox).Visible = True
+    End Sub
+
+    Private Sub homePb_Click(sender As Object, e As EventArgs) Handles homePb.Click
+        Dim ask As DialogResult = MessageBox.Show("Current game progress will be reset, go to main menu?",
+                            "Exit to Main Menu",
+                            MessageBoxButtons.YesNo)
+
+        If (ask = DialogResult.Yes) Then
+            Me.Close()
+            startForm.Show()
+        End If
     End Sub
 End Class

@@ -1357,7 +1357,7 @@ Partial Class Ulti
         Me.p2LB.AutoSize = True
         Me.p2LB.BackColor = System.Drawing.Color.Transparent
         Me.p2LB.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.p2LB.Location = New System.Drawing.Point(343, 88)
+        Me.p2LB.Location = New System.Drawing.Point(341, 88)
         Me.p2LB.Name = "p2LB"
         Me.p2LB.Size = New System.Drawing.Size(19, 24)
         Me.p2LB.TabIndex = 49
@@ -1368,7 +1368,7 @@ Partial Class Ulti
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(322, 88)
+        Me.Label3.Location = New System.Drawing.Point(320, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(15, 24)
         Me.Label3.TabIndex = 48
@@ -1379,7 +1379,7 @@ Partial Class Ulti
         Me.p1Lb.AutoSize = True
         Me.p1Lb.BackColor = System.Drawing.Color.Transparent
         Me.p1Lb.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.p1Lb.Location = New System.Drawing.Point(297, 88)
+        Me.p1Lb.Location = New System.Drawing.Point(295, 88)
         Me.p1Lb.Name = "p1Lb"
         Me.p1Lb.Size = New System.Drawing.Size(19, 24)
         Me.p1Lb.TabIndex = 47
@@ -1390,7 +1390,7 @@ Partial Class Ulti
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(241, 64)
+        Me.Label4.Location = New System.Drawing.Point(238, 65)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(187, 24)
         Me.Label4.TabIndex = 46
@@ -1402,7 +1402,7 @@ Partial Class Ulti
         Me.lbWho.BackColor = System.Drawing.SystemColors.Window
         Me.lbWho.Font = New System.Drawing.Font("Balsamiq Sans", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbWho.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lbWho.Location = New System.Drawing.Point(313, 25)
+        Me.lbWho.Location = New System.Drawing.Point(271, 21)
         Me.lbWho.Name = "lbWho"
         Me.lbWho.Size = New System.Drawing.Size(118, 44)
         Me.lbWho.TabIndex = 45
@@ -1433,7 +1433,7 @@ Partial Class Ulti
         'pb1O
         '
         Me.pb1O.Image = CType(resources.GetObject("pb1O.Image"), System.Drawing.Image)
-        Me.pb1O.Location = New System.Drawing.Point(20, 14)
+        Me.pb1O.Location = New System.Drawing.Point(20, 11)
         Me.pb1O.Name = "pb1O"
         Me.pb1O.Size = New System.Drawing.Size(148, 137)
         Me.pb1O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1477,7 +1477,7 @@ Partial Class Ulti
         'pb2O
         '
         Me.pb2O.Image = CType(resources.GetObject("pb2O.Image"), System.Drawing.Image)
-        Me.pb2O.Location = New System.Drawing.Point(20, 14)
+        Me.pb2O.Location = New System.Drawing.Point(18, 11)
         Me.pb2O.Name = "pb2O"
         Me.pb2O.Size = New System.Drawing.Size(148, 137)
         Me.pb2O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1488,7 +1488,7 @@ Partial Class Ulti
         'pb2X
         '
         Me.pb2X.Image = CType(resources.GetObject("pb2X.Image"), System.Drawing.Image)
-        Me.pb2X.Location = New System.Drawing.Point(20, 14)
+        Me.pb2X.Location = New System.Drawing.Point(18, 14)
         Me.pb2X.Name = "pb2X"
         Me.pb2X.Size = New System.Drawing.Size(148, 137)
         Me.pb2X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1521,7 +1521,7 @@ Partial Class Ulti
         'pb3O
         '
         Me.pb3O.Image = CType(resources.GetObject("pb3O.Image"), System.Drawing.Image)
-        Me.pb3O.Location = New System.Drawing.Point(20, 14)
+        Me.pb3O.Location = New System.Drawing.Point(18, 11)
         Me.pb3O.Name = "pb3O"
         Me.pb3O.Size = New System.Drawing.Size(148, 137)
         Me.pb3O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1532,7 +1532,7 @@ Partial Class Ulti
         'pb3X
         '
         Me.pb3X.Image = CType(resources.GetObject("pb3X.Image"), System.Drawing.Image)
-        Me.pb3X.Location = New System.Drawing.Point(20, 14)
+        Me.pb3X.Location = New System.Drawing.Point(18, 14)
         Me.pb3X.Name = "pb3X"
         Me.pb3X.Size = New System.Drawing.Size(148, 137)
         Me.pb3X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1565,7 +1565,7 @@ Partial Class Ulti
         'pb4O
         '
         Me.pb4O.Image = CType(resources.GetObject("pb4O.Image"), System.Drawing.Image)
-        Me.pb4O.Location = New System.Drawing.Point(20, 7)
+        Me.pb4O.Location = New System.Drawing.Point(18, 4)
         Me.pb4O.Name = "pb4O"
         Me.pb4O.Size = New System.Drawing.Size(148, 137)
         Me.pb4O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1576,7 +1576,7 @@ Partial Class Ulti
         'pb4X
         '
         Me.pb4X.Image = CType(resources.GetObject("pb4X.Image"), System.Drawing.Image)
-        Me.pb4X.Location = New System.Drawing.Point(20, 7)
+        Me.pb4X.Location = New System.Drawing.Point(18, 7)
         Me.pb4X.Name = "pb4X"
         Me.pb4X.Size = New System.Drawing.Size(148, 137)
         Me.pb4X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1609,7 +1609,7 @@ Partial Class Ulti
         'pb6O
         '
         Me.pb6O.Image = CType(resources.GetObject("pb6O.Image"), System.Drawing.Image)
-        Me.pb6O.Location = New System.Drawing.Point(20, 7)
+        Me.pb6O.Location = New System.Drawing.Point(20, 4)
         Me.pb6O.Name = "pb6O"
         Me.pb6O.Size = New System.Drawing.Size(148, 137)
         Me.pb6O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1653,7 +1653,7 @@ Partial Class Ulti
         'pb5O
         '
         Me.pb5O.Image = CType(resources.GetObject("pb5O.Image"), System.Drawing.Image)
-        Me.pb5O.Location = New System.Drawing.Point(20, 7)
+        Me.pb5O.Location = New System.Drawing.Point(18, 4)
         Me.pb5O.Name = "pb5O"
         Me.pb5O.Size = New System.Drawing.Size(148, 137)
         Me.pb5O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1664,7 +1664,7 @@ Partial Class Ulti
         'pb5X
         '
         Me.pb5X.Image = CType(resources.GetObject("pb5X.Image"), System.Drawing.Image)
-        Me.pb5X.Location = New System.Drawing.Point(20, 7)
+        Me.pb5X.Location = New System.Drawing.Point(18, 7)
         Me.pb5X.Name = "pb5X"
         Me.pb5X.Size = New System.Drawing.Size(148, 137)
         Me.pb5X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1697,7 +1697,7 @@ Partial Class Ulti
         'pb7O
         '
         Me.pb7O.Image = CType(resources.GetObject("pb7O.Image"), System.Drawing.Image)
-        Me.pb7O.Location = New System.Drawing.Point(20, 7)
+        Me.pb7O.Location = New System.Drawing.Point(18, 4)
         Me.pb7O.Name = "pb7O"
         Me.pb7O.Size = New System.Drawing.Size(148, 137)
         Me.pb7O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1708,7 +1708,7 @@ Partial Class Ulti
         'pb7X
         '
         Me.pb7X.Image = CType(resources.GetObject("pb7X.Image"), System.Drawing.Image)
-        Me.pb7X.Location = New System.Drawing.Point(20, 7)
+        Me.pb7X.Location = New System.Drawing.Point(18, 7)
         Me.pb7X.Name = "pb7X"
         Me.pb7X.Size = New System.Drawing.Size(148, 137)
         Me.pb7X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1741,7 +1741,7 @@ Partial Class Ulti
         'pb9O
         '
         Me.pb9O.Image = CType(resources.GetObject("pb9O.Image"), System.Drawing.Image)
-        Me.pb9O.Location = New System.Drawing.Point(20, 7)
+        Me.pb9O.Location = New System.Drawing.Point(20, 4)
         Me.pb9O.Name = "pb9O"
         Me.pb9O.Size = New System.Drawing.Size(148, 137)
         Me.pb9O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1785,7 +1785,7 @@ Partial Class Ulti
         'pb8O
         '
         Me.pb8O.Image = CType(resources.GetObject("pb8O.Image"), System.Drawing.Image)
-        Me.pb8O.Location = New System.Drawing.Point(20, 7)
+        Me.pb8O.Location = New System.Drawing.Point(18, 4)
         Me.pb8O.Name = "pb8O"
         Me.pb8O.Size = New System.Drawing.Size(148, 137)
         Me.pb8O.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1796,7 +1796,7 @@ Partial Class Ulti
         'pb8X
         '
         Me.pb8X.Image = CType(resources.GetObject("pb8X.Image"), System.Drawing.Image)
-        Me.pb8X.Location = New System.Drawing.Point(20, 7)
+        Me.pb8X.Location = New System.Drawing.Point(18, 7)
         Me.pb8X.Name = "pb8X"
         Me.pb8X.Size = New System.Drawing.Size(148, 137)
         Me.pb8X.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1807,8 +1807,9 @@ Partial Class Ulti
         'homePb
         '
         Me.homePb.BackColor = System.Drawing.Color.Transparent
+        Me.homePb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.homePb.Image = CType(resources.GetObject("homePb.Image"), System.Drawing.Image)
-        Me.homePb.Location = New System.Drawing.Point(13, 32)
+        Me.homePb.Location = New System.Drawing.Point(12, 33)
         Me.homePb.Name = "homePb"
         Me.homePb.Size = New System.Drawing.Size(35, 32)
         Me.homePb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1818,10 +1819,11 @@ Partial Class Ulti
         'drawPb
         '
         Me.drawPb.BackColor = System.Drawing.Color.Transparent
+        Me.drawPb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.drawPb.Image = CType(resources.GetObject("drawPb.Image"), System.Drawing.Image)
-        Me.drawPb.Location = New System.Drawing.Point(607, 113)
+        Me.drawPb.Location = New System.Drawing.Point(510, 48)
         Me.drawPb.Name = "drawPb"
-        Me.drawPb.Size = New System.Drawing.Size(49, 50)
+        Me.drawPb.Size = New System.Drawing.Size(51, 47)
         Me.drawPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.drawPb.TabIndex = 62
         Me.drawPb.TabStop = False
@@ -1829,10 +1831,11 @@ Partial Class Ulti
         'resetPb
         '
         Me.resetPb.BackColor = System.Drawing.Color.Transparent
+        Me.resetPb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.resetPb.Image = CType(resources.GetObject("resetPb.Image"), System.Drawing.Image)
-        Me.resetPb.Location = New System.Drawing.Point(613, 77)
+        Me.resetPb.Location = New System.Drawing.Point(566, 53)
         Me.resetPb.Name = "resetPb"
-        Me.resetPb.Size = New System.Drawing.Size(33, 33)
+        Me.resetPb.Size = New System.Drawing.Size(35, 30)
         Me.resetPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.resetPb.TabIndex = 61
         Me.resetPb.TabStop = False
@@ -1840,10 +1843,11 @@ Partial Class Ulti
         'helpPb
         '
         Me.helpPb.BackColor = System.Drawing.Color.Transparent
+        Me.helpPb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.helpPb.Image = CType(resources.GetObject("helpPb.Image"), System.Drawing.Image)
-        Me.helpPb.Location = New System.Drawing.Point(612, 38)
+        Me.helpPb.Location = New System.Drawing.Point(607, 53)
         Me.helpPb.Name = "helpPb"
-        Me.helpPb.Size = New System.Drawing.Size(36, 33)
+        Me.helpPb.Size = New System.Drawing.Size(38, 30)
         Me.helpPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.helpPb.TabIndex = 60
         Me.helpPb.TabStop = False
@@ -1852,12 +1856,12 @@ Partial Class Ulti
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(230, 35)
+        Me.Label2.Font = New System.Drawing.Font("Balsamiq Sans", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(518, 33)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 24)
+        Me.Label2.Size = New System.Drawing.Size(126, 20)
         Me.Label2.TabIndex = 63
-        Me.Label2.Text = "Time Here"
+        Me.Label2.Text = "Draw      Reset    Help"
         '
         'Ulti
         '
@@ -1867,7 +1871,6 @@ Partial Class Ulti
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(666, 621)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.drawPb)
         Me.Controls.Add(Me.resetPb)
         Me.Controls.Add(Me.helpPb)
@@ -1889,6 +1892,7 @@ Partial Class Ulti
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Guna2ControlBox2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Ulti"

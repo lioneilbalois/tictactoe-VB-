@@ -22,6 +22,7 @@ Partial Class Basic
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Basic))
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -43,6 +44,7 @@ Partial Class Basic
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.drawPb = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.homePb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.helpPb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.resetPb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -181,7 +183,7 @@ Partial Class Basic
         Me.lbWho.BackColor = System.Drawing.SystemColors.Window
         Me.lbWho.Font = New System.Drawing.Font("Balsamiq Sans", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbWho.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lbWho.Location = New System.Drawing.Point(183, 30)
+        Me.lbWho.Location = New System.Drawing.Point(183, 27)
         Me.lbWho.Name = "lbWho"
         Me.lbWho.Size = New System.Drawing.Size(118, 44)
         Me.lbWho.TabIndex = 14
@@ -192,7 +194,7 @@ Partial Class Basic
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(151, 76)
+        Me.Label1.Location = New System.Drawing.Point(151, 73)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(187, 24)
         Me.Label1.TabIndex = 40
@@ -203,7 +205,7 @@ Partial Class Basic
         Me.p1Lb.AutoSize = True
         Me.p1Lb.BackColor = System.Drawing.Color.Transparent
         Me.p1Lb.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.p1Lb.Location = New System.Drawing.Point(208, 100)
+        Me.p1Lb.Location = New System.Drawing.Point(208, 97)
         Me.p1Lb.Name = "p1Lb"
         Me.p1Lb.Size = New System.Drawing.Size(19, 24)
         Me.p1Lb.TabIndex = 41
@@ -214,7 +216,7 @@ Partial Class Basic
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(233, 100)
+        Me.Label3.Location = New System.Drawing.Point(233, 97)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(15, 24)
         Me.Label3.TabIndex = 43
@@ -225,7 +227,7 @@ Partial Class Basic
         Me.p2LB.AutoSize = True
         Me.p2LB.BackColor = System.Drawing.Color.Transparent
         Me.p2LB.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.p2LB.Location = New System.Drawing.Point(254, 100)
+        Me.p2LB.Location = New System.Drawing.Point(254, 97)
         Me.p2LB.Name = "p2LB"
         Me.p2LB.Size = New System.Drawing.Size(19, 24)
         Me.p2LB.TabIndex = 44
@@ -235,9 +237,9 @@ Partial Class Basic
         '
         Me.homePb.BackColor = System.Drawing.Color.Transparent
         Me.homePb.Image = CType(resources.GetObject("homePb.Image"), System.Drawing.Image)
-        Me.homePb.Location = New System.Drawing.Point(39, 35)
+        Me.homePb.Location = New System.Drawing.Point(27, 30)
         Me.homePb.Name = "homePb"
-        Me.homePb.Size = New System.Drawing.Size(42, 39)
+        Me.homePb.Size = New System.Drawing.Size(37, 27)
         Me.homePb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.homePb.TabIndex = 45
         Me.homePb.TabStop = False
@@ -246,9 +248,9 @@ Partial Class Basic
         '
         Me.helpPb.BackColor = System.Drawing.Color.Transparent
         Me.helpPb.Image = CType(resources.GetObject("helpPb.Image"), System.Drawing.Image)
-        Me.helpPb.Location = New System.Drawing.Point(398, 40)
+        Me.helpPb.Location = New System.Drawing.Point(403, 30)
         Me.helpPb.Name = "helpPb"
-        Me.helpPb.Size = New System.Drawing.Size(42, 39)
+        Me.helpPb.Size = New System.Drawing.Size(43, 32)
         Me.helpPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.helpPb.TabIndex = 46
         Me.helpPb.TabStop = False
@@ -257,9 +259,9 @@ Partial Class Basic
         '
         Me.resetPb.BackColor = System.Drawing.Color.Transparent
         Me.resetPb.Image = CType(resources.GetObject("resetPb.Image"), System.Drawing.Image)
-        Me.resetPb.Location = New System.Drawing.Point(399, 85)
+        Me.resetPb.Location = New System.Drawing.Point(404, 71)
         Me.resetPb.Name = "resetPb"
-        Me.resetPb.Size = New System.Drawing.Size(39, 39)
+        Me.resetPb.Size = New System.Drawing.Size(40, 32)
         Me.resetPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.resetPb.TabIndex = 47
         Me.resetPb.TabStop = False
@@ -301,9 +303,9 @@ Partial Class Basic
         '
         Me.drawPb.BackColor = System.Drawing.Color.Transparent
         Me.drawPb.Image = CType(resources.GetObject("drawPb.Image"), System.Drawing.Image)
-        Me.drawPb.Location = New System.Drawing.Point(393, 132)
+        Me.drawPb.Location = New System.Drawing.Point(398, 102)
         Me.drawPb.Name = "drawPb"
-        Me.drawPb.Size = New System.Drawing.Size(55, 56)
+        Me.drawPb.Size = New System.Drawing.Size(56, 49)
         Me.drawPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.drawPb.TabIndex = 48
         Me.drawPb.TabStop = False
@@ -369,4 +371,5 @@ Partial Class Basic
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents drawPb As PictureBox
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

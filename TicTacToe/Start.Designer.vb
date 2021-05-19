@@ -37,9 +37,9 @@ Partial Class startForm
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel6 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,7 +80,7 @@ Partial Class startForm
         Me.Guna2Button7.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Location = New System.Drawing.Point(16, 42)
+        Me.Guna2Button7.Location = New System.Drawing.Point(15, 42)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
         Me.Guna2Button7.Size = New System.Drawing.Size(391, 49)
@@ -227,6 +227,21 @@ Partial Class startForm
         Me.Guna2DragControl1.ContainerControl = Me
         Me.Guna2DragControl1.TargetControl = Me.Guna2Panel1
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox1)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(419, 25)
+        Me.Guna2Panel1.TabIndex = 32
+        Me.Guna2Panel1.UseTransparentBackground = True
+        '
         'Guna2ControlBox2
         '
         Me.Guna2ControlBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -259,21 +274,6 @@ Partial Class startForm
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(42, 25)
         Me.Guna2ControlBox1.TabIndex = 33
         Me.Guna2ControlBox1.UseTransparentBackground = True
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox1)
-        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(419, 25)
-        Me.Guna2Panel1.TabIndex = 32
-        Me.Guna2Panel1.UseTransparentBackground = True
         '
         'startForm
         '

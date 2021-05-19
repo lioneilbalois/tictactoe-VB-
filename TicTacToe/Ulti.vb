@@ -142,7 +142,7 @@
         'check if larger box is won
         'Winning scenarios as a whole: 8
         If ((val(0, 1) = val(0, 2)) And (val(0, 2) = val(0, 3)) And (val(0, 1) <> "A")) Then
-            ender()
+            'ender()
         ElseIf ((val(0, 4) = val(0, 5)) And (val(0, 5) = val(0, 6)) And (val(0, 4) <> "A")) Then
 
         ElseIf ((val(0, 7) = val(0, 8)) And (val(0, 8) = val(0, 9)) And (val(0, 7) <> "A")) Then

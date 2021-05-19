@@ -2,37 +2,20 @@
     Dim val(9, 9) As Char 'holds the value of the smallest box (group, specific box)
     Dim hasWon(9) As Boolean 'specifies if grp is already won or not
     Dim nround As Integer = 1 'current round no.
-    Public Function isPopulated(index) 'returns true if group is already populated but not won
-        'check if the grp is already populated
-        For i As Integer = 1 To 9
-            If (DirectCast(Controls.Find("bt" & index & CStr(i), True)(0), Button).Text = "") Then
-                Return False
-            End If
-        Next
-        Return True
-    End Function
-    Public Function isDraw()
-        For i As Integer = 1 To 9
-            If (hasWon(i) = False And isPopulated(CStr(i)) = False) Then
-                Return False
-            End If
-        Next
-        Return True
-    End Function
     Public Function director(place)
         'RESTRICT: turn off other buttons/groupbox
         'dont turn off destination (grp):
         Dim grp As Integer = CInt(place) Mod 10
 
         'check if destination is already won, if yes dont restrict
-        If (hasWon(grp) = True Or isPopulated(grp) = True) Then
+        If (hasWon(grp) = True) Then
             'reset color of current grp
             Me.Controls("GroupBox" & place(0)).BorderColor = Color.Transparent
 
             'enable disabled buttons due to restriction
             For gid As Integer = 1 To 9
                 'only enable not won grp
-                If (hasWon(gid) = False And isPopulated(CStr(gid)) = False) Then
+                If (hasWon(gid) = False) Then
                     Me.Controls("GroupBox" & gid.ToString).Controls.OfType(Of Button).All(Function(b)
 
                                                                                               b.Enabled = True
@@ -71,82 +54,56 @@
             End If
         Next
     End Function
-    Public Function resetBorder(id)
-        Me.Controls("GroupBox" & id).BorderColor = Color.Transparent
+    Public Function getVal(loc)
+        Return DirectCast(Controls.Find("bt" & loc, True)(0), Button).Text
     End Function
-    Public Function reset()
-        'set first turn on the next round, even round for O-player
-        If (nround Mod 2 = 0) Then
-            lbWho.Text = "O-TURN"
-        Else
-            lbWho.Text = "X-TURN"
-        End If
 
-        For gid As Integer = 1 To 9
-            'need to reset all grp borders
-            resetBorder(CStr(gid))
-            'reset buttons
-            Me.Controls("GroupBox" & gid.ToString).Controls.OfType(Of Button).All(Function(b)
-
-                                                                                      b.Enabled = True
-                                                                                      b.Text = ""
-                                                                                      Return True
-
-                                                                                  End Function)
-            'reset pictureboxes
-            Me.Controls("GroupBox" & gid.ToString).Controls.OfType(Of PictureBox).All(Function(b)
-
-                                                                                          b.Visible = False
-                                                                                          Return True
-
-                                                                                      End Function)
-
-        Next
-    End Function
-    Public Function wonGrp(grp, index)
+    Public Function MiniChecker(grp)
         Dim pb As String = "pb" + CStr(grp) 'picture box name for winned grp
 
-        'show who won on specific grp
-        DirectCast(Controls.Find(pb & (val(grp, index)), True)(0), PictureBox).Visible = True
-        hasWon(grp) = True
-        val(0, grp) = val(grp, index)
-
-        'disable buttons on that won group
-        Me.Controls("GroupBox" & grp.ToString).Controls.OfType(Of Button).All(Function(b)
-
-                                                                                  b.Enabled = False
-                                                                                  Return True
-
-                                                                              End Function)
-    End Function
-    Public Function MiniChecker(grp)
         'check if the group Is won, Winning scenarios: 8
         If ((val(grp, 1) = val(grp, 2)) And (val(grp, 2) = val(grp, 3)) And val(grp, 1) <> "A") Then
-            wonGrp(grp, 1)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 1)
+            DirectCast(Controls.Find(pb & (val(grp, 1)), True)(0), PictureBox).Visible = True
 
         ElseIf ((val(grp, 6) = val(grp, 5)) And (val(grp, 5) = val(grp, 4)) And val(grp, 6) <> "A") Then
-            wonGrp(grp, 6)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 6)
+            DirectCast(Controls.Find(pb & val(grp, 6), True)(0), PictureBox).Visible = True
 
         ElseIf ((val(grp, 9) = val(grp, 8)) And (val(grp, 8) = val(grp, 7)) And val(grp, 9) <> "A") Then
-            wonGrp(grp, 9)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 9)
+            DirectCast(Controls.Find(pb & val(grp, 9), True)(0), PictureBox).Visible = True
 
         ElseIf ((val(grp, 1) = val(grp, 6)) And (val(grp, 6) = val(grp, 9)) And val(grp, 6) <> "A") Then
-            wonGrp(grp, 6)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 6)
+            DirectCast(Controls.Find(pb & val(grp, 6), True)(0), PictureBox).Visible = True
 
         ElseIf ((val(grp, 2) = val(grp, 5)) And (val(grp, 5) = val(grp, 8)) And val(grp, 8) <> "A") Then
-            wonGrp(grp, 2)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 2)
+            DirectCast(Controls.Find(pb & val(grp, 8), True)(0), PictureBox).Visible = True
 
         ElseIf ((val(grp, 3) = val(grp, 4)) And (val(grp, 4) = val(grp, 7)) And val(grp, 3) <> "A") Then
-            wonGrp(grp, 3)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 3)
+            DirectCast(Controls.Find(pb & val(grp, 3), True)(0), PictureBox).Visible = True
 
         ElseIf ((val(grp, 1) = val(grp, 5)) And (val(grp, 5) = val(grp, 7)) And val(grp, 7) <> "A") Then
-            wonGrp(grp, 1)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 1)
+            DirectCast(Controls.Find(pb & val(grp, 7), True)(0), PictureBox).Visible = True
 
         ElseIf ((val(grp, 3) = val(grp, 5)) And (val(grp, 5) = val(grp, 9)) And val(grp, 9) <> "A") Then
-            wonGrp(grp, 3)
+            hasWon(grp) = True
+            val(0, grp) = val(grp, 3)
+            DirectCast(Controls.Find(pb & val(grp, 9), True)(0), PictureBox).Visible = True
         End If
     End Function
-    Public Function ender(who) 'ender function if someone win
+    Public Function ender(who)
         lbWho.Text = ""
         If who = "X" Then
             p1Lb.Text = CInt(p1Lb.Text) + 1
@@ -154,9 +111,7 @@
             p2LB.Text = CInt(p2LB.Text) + 1
         End If
 
-        winpop.mode = "U"
         winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
-        nround += 1
         winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
         winpop.ShowDialog()
     End Function
@@ -180,43 +135,28 @@
                 val(grp, id) = "O" 'store to val array
             End If
         End If
-        System.Console.WriteLine(ind + ": " + btnName.Text) 'record moves
+
         'check if certain 3x3 box is won
         MiniChecker(grp)
-
-        'game is draw
-        If (isDraw()) Then
-            lbWho.Text = ""
-            winpop.mode = "U"
-            winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
-            nround += 1
-            winpop.winrLb.Text = "-- Draw --"
-            winpop.ShowDialog()
-            Exit Function
-        End If
 
         'check if larger box is won
         'Winning scenarios as a whole: 8
         If ((val(0, 1) = val(0, 2)) And (val(0, 2) = val(0, 3)) And (val(0, 1) <> "A")) Then
-<<<<<<< Updated upstream
             'ender()
-=======
-            ender(val(0, 1))
->>>>>>> Stashed changes
         ElseIf ((val(0, 4) = val(0, 5)) And (val(0, 5) = val(0, 6)) And (val(0, 4) <> "A")) Then
-            ender(val(0, 4))
+
         ElseIf ((val(0, 7) = val(0, 8)) And (val(0, 8) = val(0, 9)) And (val(0, 7) <> "A")) Then
-            ender(val(0, 7))
+
         ElseIf ((val(0, 1) = val(0, 6)) And (val(0, 6) = val(0, 9)) And (val(0, 1) <> "A")) Then
-            ender(val(0, 1))
+
         ElseIf ((val(0, 2) = val(0, 5)) And (val(0, 5) = val(0, 8)) And (val(0, 2) <> "A")) Then
-            ender(val(0, 2))
+
         ElseIf ((val(0, 3) = val(0, 4)) And (val(0, 4) = val(0, 7)) And (val(0, 3) <> "A")) Then
-            ender(val(0, 3))
+
         ElseIf ((val(0, 1) = val(0, 5)) And (val(0, 5) = val(0, 7)) And (val(0, 1) <> "A")) Then
-            ender(val(0, 1))
+
         ElseIf ((val(0, 3) = val(0, 5)) And (val(0, 5) = val(0, 8)) And (val(0, 3) <> "A")) Then
-            ender(val(0, 3))
+
         End If
 
         'to point next player to designated box/grp
@@ -501,71 +441,5 @@
             Me.Close()
             startForm.Show()
         End If
-    End Sub
-
-    Private Sub resetPb_Click(sender As Object, e As EventArgs) Handles resetPb.Click
-        'reset current round
-        Dim ask As DialogResult = MessageBox.Show("Yo sure? Reset tiles?",
-                            "Reset",
-                            MessageBoxButtons.YesNo)
-
-        If (ask = DialogResult.Yes) Then
-            reset()
-        End If
-    End Sub
-
-    Private Sub drawPb_Click(sender As Object, e As EventArgs) Handles drawPb.Click
-        'draw, increment round to change first turn
-        Dim ask As DialogResult = MessageBox.Show("Yo sure? Accept draw?",
-                            "Draw",
-                            MessageBoxButtons.YesNo)
-
-        If (ask = DialogResult.Yes) Then
-            lbWho.Text = ""
-            winpop.mode = "U"
-            winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
-            nround += 1
-            winpop.winrLb.Text = "-- Draw --"
-            winpop.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub helpPb_Click(sender As Object, e As EventArgs) Handles helpPb.Click
-        'show instruction
-    End Sub
-
-    Private Sub drawPb_MouseHover(sender As Object, e As EventArgs) Handles drawPb.MouseHover
-        'when hover change
-        drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2hover.png")
-    End Sub
-
-    Private Sub drawPb_MouseLeave(sender As Object, e As EventArgs) Handles drawPb.MouseLeave
-        'when hover change
-        drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2.png")
-    End Sub
-    Private Sub helpPb_MouseHover(sender As Object, e As EventArgs) Handles helpPb.MouseHover
-        'when hover change
-        helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark-hv.png")
-    End Sub
-    Private Sub helpPb_MouseLeave(sender As Object, e As EventArgs) Handles helpPb.MouseLeave
-        'when hover change
-        helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark.png")
-    End Sub
-    Private Sub resetPb_MouseHover(sender As Object, e As EventArgs) Handles resetPb.MouseHover
-        'when hover change
-        resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow-hv.png")
-    End Sub
-    Private Sub resetPb_MouseLeave(sender As Object, e As EventArgs) Handles resetPb.MouseLeave
-        'when hover change
-        resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow.png")
-    End Sub
-
-    Private Sub homePb_MouseHover(sender As Object, e As EventArgs) Handles homePb.MouseHover
-        'when hover change
-        homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage-hv.png")
-    End Sub
-    Private Sub homePb_MouseLeave(sender As Object, e As EventArgs) Handles homePb.MouseLeave
-        'when hover change
-        homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage.png")
     End Sub
 End Class

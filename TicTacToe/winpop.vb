@@ -1,5 +1,5 @@
 ﻿Public Class winpop
-    Public mode As String
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
         ProgressBar1.PerformStep()
@@ -16,24 +16,15 @@
 
         If (ask = DialogResult.Yes) Then
             Me.Close()
-            If (mode = "B") Then
-                Basic.Close()
-            Else
-                Ulti.Close()
-            End If
+            Basic.Close()
             startForm.Show()
-            End If
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Timer1.Stop()
-        If (mode = "B") Then
-            Basic.incr()
-            Basic.reset()
-        Else
-            'for ultimate
-            Ulti.reset()
-        End If
+        Basic.incr()
+        Basic.reset()
         Me.Close()
     End Sub
 

@@ -18,8 +18,7 @@
                 turn = True
             End If
         End If
-        'check if draw
-        draw()
+
         'Winning scenarios: 8
         If (((Button1.Text = Button2.Text) And (Button2.Text = Button3.Text)) And Button1.Text <> "") Then
             ender(Button1.Text)
@@ -46,19 +45,9 @@
             ender(Button3.Text)
         End If
     End Function
-    Public Function draw()
-        For i As Integer = 1 To 9
-            If (DirectCast(Controls.Find("Button" & CStr(i), True)(0), Button).Text) = "" Then
-                Exit Function
-            End If
-        Next
-        lbWho.Text = ""
-        winpop.mode = "B"
-        winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
-        winpop.winrLb.Text = "-- Draw --"
-        winpop.ShowDialog()
-    End Function
+
     Public Function ender(who)
+        'who = "X"?(lbWho.Text = "Player-2 wins!") : lbWho.Text = "Player-1 wins!"
 
         'Timer1.Stop()
         lbWho.Text = ""
@@ -68,7 +57,6 @@
             p2LB.Text = CInt(p2LB.Text) + 1
         End If
 
-        winpop.mode = "B"
         winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
         winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
         winpop.ShowDialog()
@@ -167,43 +155,5 @@
             nround += 1
             reset()
         End If
-    End Sub
-    Private Sub drawPb_MouseHover(sender As Object, e As EventArgs) Handles drawPb.MouseHover
-        'when hover change
-        drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2hover.png")
-        ToolTip1.Show("Draw", helpPb, New Point(40, 110), 2000)
-    End Sub
-
-    Private Sub drawPb_MouseLeave(sender As Object, e As EventArgs) Handles drawPb.MouseLeave
-        'when hover change
-        drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2.png")
-    End Sub
-    Private Sub helpPb_MouseHover(sender As Object, e As EventArgs) Handles helpPb.MouseHover
-        'when hover change
-        helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark-hv.png")
-        ToolTip1.Show("Help", helpPb, New Point(40, 30), 2000)
-    End Sub
-    Private Sub helpPb_MouseLeave(sender As Object, e As EventArgs) Handles helpPb.MouseLeave
-        'when hover change
-        helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark.png")
-    End Sub
-    Private Sub resetPb_MouseHover(sender As Object, e As EventArgs) Handles resetPb.MouseHover
-        'when hover change
-        resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow-hv.png")
-        ToolTip1.Show("Reset", helpPb, New Point(40, 70), 2000)
-    End Sub
-    Private Sub resetPb_MouseLeave(sender As Object, e As EventArgs) Handles resetPb.MouseLeave
-        'when hover change
-        resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow.png")
-    End Sub
-
-    Private Sub homePb_MouseHover(sender As Object, e As EventArgs) Handles homePb.MouseHover
-        'when hover change
-        homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage-hv.png")
-        ToolTip1.Show("Home", helpPb, New Point(-360, 30), 2000)
-    End Sub
-    Private Sub homePb_MouseLeave(sender As Object, e As EventArgs) Handles homePb.MouseLeave
-        'when hover change
-        homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage.png")
     End Sub
 End Class

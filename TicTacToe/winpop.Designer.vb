@@ -23,6 +23,7 @@ Partial Class winpop
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(winpop))
         Me.roundLb = New System.Windows.Forms.Label()
         Me.winrLb = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -35,8 +36,10 @@ Partial Class winpop
         'roundLb
         '
         Me.roundLb.AutoSize = True
+        Me.roundLb.BackColor = System.Drawing.Color.Transparent
         Me.roundLb.Font = New System.Drawing.Font("Balsamiq Sans", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.roundLb.Location = New System.Drawing.Point(20, 17)
+        Me.roundLb.ForeColor = System.Drawing.Color.White
+        Me.roundLb.Location = New System.Drawing.Point(20, 27)
         Me.roundLb.Name = "roundLb"
         Me.roundLb.Size = New System.Drawing.Size(166, 52)
         Me.roundLb.TabIndex = 0
@@ -45,8 +48,10 @@ Partial Class winpop
         'winrLb
         '
         Me.winrLb.AutoSize = True
+        Me.winrLb.BackColor = System.Drawing.Color.Transparent
         Me.winrLb.Font = New System.Drawing.Font("Balsamiq Sans", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.winrLb.Location = New System.Drawing.Point(106, 81)
+        Me.winrLb.ForeColor = System.Drawing.Color.White
+        Me.winrLb.Location = New System.Drawing.Point(99, 91)
         Me.winrLb.Name = "winrLb"
         Me.winrLb.Size = New System.Drawing.Size(172, 58)
         Me.winrLb.TabIndex = 1
@@ -54,18 +59,20 @@ Partial Class winpop
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(261, 172)
+        Me.Button1.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(270, 163)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 24)
+        Me.Button1.Size = New System.Drawing.Size(86, 24)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Next Round"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(261, 202)
+        Me.Button2.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(270, 193)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 24)
+        Me.Button2.Size = New System.Drawing.Size(86, 24)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Main Menu"
         Me.Button2.UseVisualStyleBackColor = True
@@ -73,8 +80,10 @@ Partial Class winpop
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(26, 178)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(26, 176)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(187, 13)
         Me.Label2.TabIndex = 4
@@ -82,10 +91,10 @@ Partial Class winpop
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(26, 207)
+        Me.ProgressBar1.Location = New System.Drawing.Point(28, 195)
         Me.ProgressBar1.Minimum = 50
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(187, 14)
+        Me.ProgressBar1.Size = New System.Drawing.Size(187, 10)
         Me.ProgressBar1.Step = 25
         Me.ProgressBar1.TabIndex = 5
         Me.ProgressBar1.Value = 50
@@ -99,6 +108,7 @@ Partial Class winpop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(380, 237)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label2)

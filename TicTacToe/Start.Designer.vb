@@ -23,42 +23,43 @@ Partial Class startForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(startForm))
+        Me.mechaBt = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel2 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.basicBt = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.ultiBt = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel3 = New Guna.UI2.WinForms.Guna2ShadowPanel()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.settingBt = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel4 = New Guna.UI2.WinForms.Guna2ShadowPanel()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
+        Me.aboutBt = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel5 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel6 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Guna2Button3
+        'mechaBt
         '
-        Me.Guna2Button3.BackColor = System.Drawing.Color.White
-        Me.Guna2Button3.BorderThickness = 3
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.FillColor = System.Drawing.Color.White
-        Me.Guna2Button3.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(146, 115)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button3.TabIndex = 11
-        Me.Guna2Button3.Text = "Mechanics"
+        Me.mechaBt.BackColor = System.Drawing.Color.White
+        Me.mechaBt.BorderThickness = 3
+        Me.mechaBt.CheckedState.Parent = Me.mechaBt
+        Me.mechaBt.CustomImages.Parent = Me.mechaBt
+        Me.mechaBt.FillColor = System.Drawing.Color.White
+        Me.mechaBt.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mechaBt.ForeColor = System.Drawing.Color.Black
+        Me.mechaBt.HoverState.Parent = Me.mechaBt
+        Me.mechaBt.Location = New System.Drawing.Point(146, 115)
+        Me.mechaBt.Name = "mechaBt"
+        Me.mechaBt.ShadowDecoration.Parent = Me.mechaBt
+        Me.mechaBt.Size = New System.Drawing.Size(125, 31)
+        Me.mechaBt.TabIndex = 11
+        Me.mechaBt.Text = "Mechanics"
         '
         'Guna2ShadowPanel2
         '
@@ -80,29 +81,29 @@ Partial Class startForm
         Me.Guna2Button7.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Location = New System.Drawing.Point(16, 42)
+        Me.Guna2Button7.Location = New System.Drawing.Point(14, 42)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
         Me.Guna2Button7.Size = New System.Drawing.Size(391, 49)
         Me.Guna2Button7.TabIndex = 21
         Me.Guna2Button7.Text = "Tic-Tac-Toe (Multiplayer Offline)"
         '
-        'Guna2Button2
+        'basicBt
         '
-        Me.Guna2Button2.BackColor = System.Drawing.Color.White
-        Me.Guna2Button2.BorderThickness = 3
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.White
-        Me.Guna2Button2.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(26, 225)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button2.TabIndex = 22
-        Me.Guna2Button2.Text = "Basic (3x3)"
+        Me.basicBt.BackColor = System.Drawing.Color.White
+        Me.basicBt.BorderThickness = 3
+        Me.basicBt.CheckedState.Parent = Me.basicBt
+        Me.basicBt.CustomImages.Parent = Me.basicBt
+        Me.basicBt.FillColor = System.Drawing.Color.White
+        Me.basicBt.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
+        Me.basicBt.ForeColor = System.Drawing.Color.Black
+        Me.basicBt.HoverState.Parent = Me.basicBt
+        Me.basicBt.Location = New System.Drawing.Point(26, 225)
+        Me.basicBt.Name = "basicBt"
+        Me.basicBt.ShadowDecoration.Parent = Me.basicBt
+        Me.basicBt.Size = New System.Drawing.Size(125, 31)
+        Me.basicBt.TabIndex = 22
+        Me.basicBt.Text = "Basic (3x3)"
         '
         'Guna2ShadowPanel1
         '
@@ -114,22 +115,22 @@ Partial Class startForm
         Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(122, 29)
         Me.Guna2ShadowPanel1.TabIndex = 23
         '
-        'Guna2Button1
+        'ultiBt
         '
-        Me.Guna2Button1.BackColor = System.Drawing.Color.White
-        Me.Guna2Button1.BorderThickness = 3
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.White
-        Me.Guna2Button1.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(247, 332)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(141, 31)
-        Me.Guna2Button1.TabIndex = 24
-        Me.Guna2Button1.Text = "Ultimate (9x9)"
+        Me.ultiBt.BackColor = System.Drawing.Color.White
+        Me.ultiBt.BorderThickness = 3
+        Me.ultiBt.CheckedState.Parent = Me.ultiBt
+        Me.ultiBt.CustomImages.Parent = Me.ultiBt
+        Me.ultiBt.FillColor = System.Drawing.Color.White
+        Me.ultiBt.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
+        Me.ultiBt.ForeColor = System.Drawing.Color.Black
+        Me.ultiBt.HoverState.Parent = Me.ultiBt
+        Me.ultiBt.Location = New System.Drawing.Point(247, 332)
+        Me.ultiBt.Name = "ultiBt"
+        Me.ultiBt.ShadowDecoration.Parent = Me.ultiBt
+        Me.ultiBt.Size = New System.Drawing.Size(141, 31)
+        Me.ultiBt.TabIndex = 24
+        Me.ultiBt.Text = "Ultimate (9x9)"
         '
         'Guna2ShadowPanel3
         '
@@ -141,22 +142,22 @@ Partial Class startForm
         Me.Guna2ShadowPanel3.Size = New System.Drawing.Size(138, 29)
         Me.Guna2ShadowPanel3.TabIndex = 25
         '
-        'Guna2Button4
+        'settingBt
         '
-        Me.Guna2Button4.BackColor = System.Drawing.Color.White
-        Me.Guna2Button4.BorderThickness = 3
-        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
-        Me.Guna2Button4.FillColor = System.Drawing.Color.White
-        Me.Guna2Button4.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Location = New System.Drawing.Point(146, 443)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button4.TabIndex = 26
-        Me.Guna2Button4.Text = "Settings"
+        Me.settingBt.BackColor = System.Drawing.Color.White
+        Me.settingBt.BorderThickness = 3
+        Me.settingBt.CheckedState.Parent = Me.settingBt
+        Me.settingBt.CustomImages.Parent = Me.settingBt
+        Me.settingBt.FillColor = System.Drawing.Color.White
+        Me.settingBt.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
+        Me.settingBt.ForeColor = System.Drawing.Color.Black
+        Me.settingBt.HoverState.Parent = Me.settingBt
+        Me.settingBt.Location = New System.Drawing.Point(146, 443)
+        Me.settingBt.Name = "settingBt"
+        Me.settingBt.ShadowDecoration.Parent = Me.settingBt
+        Me.settingBt.Size = New System.Drawing.Size(125, 31)
+        Me.settingBt.TabIndex = 26
+        Me.settingBt.Text = "Settings"
         '
         'Guna2ShadowPanel4
         '
@@ -168,22 +169,22 @@ Partial Class startForm
         Me.Guna2ShadowPanel4.Size = New System.Drawing.Size(122, 29)
         Me.Guna2ShadowPanel4.TabIndex = 27
         '
-        'Guna2Button5
+        'aboutBt
         '
-        Me.Guna2Button5.BackColor = System.Drawing.Color.White
-        Me.Guna2Button5.BorderThickness = 3
-        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
-        Me.Guna2Button5.FillColor = System.Drawing.Color.White
-        Me.Guna2Button5.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(146, 495)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button5.TabIndex = 28
-        Me.Guna2Button5.Text = "About"
+        Me.aboutBt.BackColor = System.Drawing.Color.White
+        Me.aboutBt.BorderThickness = 3
+        Me.aboutBt.CheckedState.Parent = Me.aboutBt
+        Me.aboutBt.CustomImages.Parent = Me.aboutBt
+        Me.aboutBt.FillColor = System.Drawing.Color.White
+        Me.aboutBt.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!)
+        Me.aboutBt.ForeColor = System.Drawing.Color.Black
+        Me.aboutBt.HoverState.Parent = Me.aboutBt
+        Me.aboutBt.Location = New System.Drawing.Point(146, 495)
+        Me.aboutBt.Name = "aboutBt"
+        Me.aboutBt.ShadowDecoration.Parent = Me.aboutBt
+        Me.aboutBt.Size = New System.Drawing.Size(125, 31)
+        Me.aboutBt.TabIndex = 28
+        Me.aboutBt.Text = "About"
         '
         'Guna2ShadowPanel5
         '
@@ -227,6 +228,21 @@ Partial Class startForm
         Me.Guna2DragControl1.ContainerControl = Me
         Me.Guna2DragControl1.TargetControl = Me.Guna2Panel1
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox1)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(419, 25)
+        Me.Guna2Panel1.TabIndex = 32
+        Me.Guna2Panel1.UseTransparentBackground = True
+        '
         'Guna2ControlBox2
         '
         Me.Guna2ControlBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -260,38 +276,24 @@ Partial Class startForm
         Me.Guna2ControlBox1.TabIndex = 33
         Me.Guna2ControlBox1.UseTransparentBackground = True
         '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox1)
-        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(419, 25)
-        Me.Guna2Panel1.TabIndex = 32
-        Me.Guna2Panel1.UseTransparentBackground = True
-        '
         'startForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(419, 620)
         Me.Controls.Add(Me.Guna2Button6)
         Me.Controls.Add(Me.Guna2ShadowPanel6)
-        Me.Controls.Add(Me.Guna2Button5)
+        Me.Controls.Add(Me.aboutBt)
         Me.Controls.Add(Me.Guna2ShadowPanel5)
-        Me.Controls.Add(Me.Guna2Button4)
+        Me.Controls.Add(Me.settingBt)
         Me.Controls.Add(Me.Guna2ShadowPanel4)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.ultiBt)
         Me.Controls.Add(Me.Guna2ShadowPanel3)
-        Me.Controls.Add(Me.Guna2Button2)
+        Me.Controls.Add(Me.basicBt)
         Me.Controls.Add(Me.Guna2ShadowPanel1)
         Me.Controls.Add(Me.Guna2Button7)
-        Me.Controls.Add(Me.Guna2Button3)
+        Me.Controls.Add(Me.mechaBt)
         Me.Controls.Add(Me.Guna2ShadowPanel2)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -301,16 +303,16 @@ Partial Class startForm
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents mechaBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel2 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents basicBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents ultiBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel3 As Guna.UI2.WinForms.Guna2ShadowPanel
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents settingBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel4 As Guna.UI2.WinForms.Guna2ShadowPanel
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents aboutBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel5 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel6 As Guna.UI2.WinForms.Guna2ShadowPanel

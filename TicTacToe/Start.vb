@@ -1,16 +1,28 @@
 ﻿Public Class startForm
 
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles basicBt.Click
+        nameAsk.modeLb.Text = "Basic"
         Me.Hide()
-        Basic.Show()
+        nameAsk.Show()
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles ultiBt.Click
+        nameAsk.modeLb.Text = "Ultimate"
         Me.Hide()
-        Ulti.Show()
+        nameAsk.Show()
     End Sub
 
-    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles mechaBt.Click
         Me.Hide()
+    End Sub
+
+    Private Sub aboutBt_Click(sender As Object, e As EventArgs) Handles aboutBt.Click
+        Me.Hide()
+        About.Show()
+    End Sub
+
+    Private Sub settingBt_Click(sender As Object, e As EventArgs) Handles settingBt.Click
+        Me.Hide()
+        Settings.Show()
     End Sub
 End Class

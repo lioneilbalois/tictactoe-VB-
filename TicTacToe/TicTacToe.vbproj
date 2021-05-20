@@ -82,12 +82,28 @@
     <Compile Include="Basic.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mechanics.Designer.vb">
       <DependentUpon>Mechanics.vb</DependentUpon>
     </Compile>
     <Compile Include="Mechanics.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
     <Compile Include="winpop.Designer.vb">
       <DependentUpon>winpop.vb</DependentUpon>
     </Compile>
@@ -128,8 +144,17 @@
     <EmbeddedResource Include="Basic.resx">
       <DependentUpon>Basic.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mechanics.resx">
       <DependentUpon>Mechanics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="winpop.resx">
       <DependentUpon>winpop.vb</DependentUpon>

@@ -31,6 +31,7 @@ Partial Class winpop
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.SuspendLayout()
         '
         'roundLb
@@ -104,6 +105,10 @@ Partial Class winpop
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 3000
         '
+        'Guna2AnimateWindow1
+        '
+        Me.Guna2AnimateWindow1.TargetForm = Me
+        '
         'winpop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -132,4 +137,5 @@ Partial Class winpop
     Friend WithEvents Label2 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
 End Class

@@ -82,6 +82,12 @@
     <Compile Include="Basic.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Mechanics_New.Designer.vb">
+      <DependentUpon>Mechanics_New.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mechanics_New.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="nameAsk.Designer.vb">
       <DependentUpon>nameAsk.vb</DependentUpon>
     </Compile>
@@ -143,6 +149,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Basic.resx">
       <DependentUpon>Basic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mechanics_New.resx">
+      <DependentUpon>Mechanics_New.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nameAsk.resx">
       <DependentUpon>nameAsk.vb</DependentUpon>

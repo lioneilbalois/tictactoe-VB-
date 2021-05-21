@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class NextBttn
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,35 +20,41 @@ Partial Class NextBttn
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.GunaUltBttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.GunaBscBttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.BscPanel = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.PrvsBttn = New Guna.UI2.WinForms.Guna2Button()
         Me.BscPanel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.BscPanel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.BscPanel = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.GunaBscBttn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.PrvsBttn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.BscPanel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
-        Me.BscPanel2.SuspendLayout()
-        Me.BscPanel3.SuspendLayout()
         Me.BscPanel.SuspendLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BscPanel2.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BscPanel3.SuspendLayout()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BscPanel4.SuspendLayout()
+        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -59,7 +65,7 @@ Partial Class NextBttn
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1630, 47)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(408, 47)
         Me.Guna2Panel1.TabIndex = 0
         '
         'Label1
@@ -84,7 +90,7 @@ Partial Class NextBttn
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 47)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1630, 45)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(408, 45)
         Me.Guna2Panel2.TabIndex = 1
         '
         'GunaUltBttn
@@ -103,6 +109,93 @@ Partial Class NextBttn
         Me.GunaUltBttn.TabIndex = 1
         Me.GunaUltBttn.Text = "Ultimate"
         '
+        'GunaBscBttn
+        '
+        Me.GunaBscBttn.BackColor = System.Drawing.Color.Snow
+        Me.GunaBscBttn.CheckedState.Parent = Me.GunaBscBttn
+        Me.GunaBscBttn.CustomImages.Parent = Me.GunaBscBttn
+        Me.GunaBscBttn.FillColor = System.Drawing.Color.Transparent
+        Me.GunaBscBttn.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaBscBttn.ForeColor = System.Drawing.Color.Black
+        Me.GunaBscBttn.HoverState.Parent = Me.GunaBscBttn
+        Me.GunaBscBttn.Location = New System.Drawing.Point(12, 6)
+        Me.GunaBscBttn.Name = "GunaBscBttn"
+        Me.GunaBscBttn.ShadowDecoration.Parent = Me.GunaBscBttn
+        Me.GunaBscBttn.Size = New System.Drawing.Size(180, 32)
+        Me.GunaBscBttn.TabIndex = 0
+        Me.GunaBscBttn.Text = "Basic "
+        '
+        'BscPanel
+        '
+        Me.BscPanel.Controls.Add(Me.Guna2PictureBox1)
+        Me.BscPanel.Controls.Add(Me.Label3)
+        Me.BscPanel.Controls.Add(Me.Label2)
+        Me.BscPanel.Location = New System.Drawing.Point(12, 44)
+        Me.BscPanel.Name = "BscPanel"
+        Me.BscPanel.ShadowDecoration.Parent = Me.BscPanel
+        Me.BscPanel.Size = New System.Drawing.Size(380, 427)
+        Me.BscPanel.TabIndex = 2
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Image = Global.TicTacToe.My.Resources.Resources.basic_1
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(22, 106)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(336, 259)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox1.TabIndex = 2
+        Me.Guna2PictureBox1.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(55, 56)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(250, 34)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "The game is played on a grid that's 3 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "squares by 3 squares."
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(54, 11)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(241, 24)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Basic Tic Tac Toe (3 x 3)"
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Location = New System.Drawing.Point(211, 524)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button1.TabIndex = 4
+        Me.Guna2Button1.Text = "Next"
+        '
+        'PrvsBttn
+        '
+        Me.PrvsBttn.CheckedState.Parent = Me.PrvsBttn
+        Me.PrvsBttn.CustomImages.Parent = Me.PrvsBttn
+        Me.PrvsBttn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.PrvsBttn.ForeColor = System.Drawing.Color.White
+        Me.PrvsBttn.HoverState.Parent = Me.PrvsBttn
+        Me.PrvsBttn.Location = New System.Drawing.Point(12, 524)
+        Me.PrvsBttn.Name = "PrvsBttn"
+        Me.PrvsBttn.ShadowDecoration.Parent = Me.PrvsBttn
+        Me.PrvsBttn.Size = New System.Drawing.Size(180, 45)
+        Me.PrvsBttn.TabIndex = 5
+        Me.PrvsBttn.Text = "Previous"
+        '
         'BscPanel2
         '
         Me.BscPanel2.Controls.Add(Me.Guna2PictureBox2)
@@ -113,6 +206,17 @@ Partial Class NextBttn
         Me.BscPanel2.ShadowDecoration.Parent = Me.BscPanel2
         Me.BscPanel2.Size = New System.Drawing.Size(380, 427)
         Me.BscPanel2.TabIndex = 6
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.TicTacToe.My.Resources.Resources.basic_2
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(19, 106)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(322, 259)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox2.TabIndex = 2
+        Me.Guna2PictureBox2.TabStop = False
         '
         'Label12
         '
@@ -146,6 +250,17 @@ Partial Class NextBttn
         Me.BscPanel3.Size = New System.Drawing.Size(380, 427)
         Me.BscPanel3.TabIndex = 7
         '
+        'Guna2PictureBox3
+        '
+        Me.Guna2PictureBox3.Image = Global.TicTacToe.My.Resources.Resources.basic_3
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(19, 106)
+        Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
+        Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
+        Me.Guna2PictureBox3.Size = New System.Drawing.Size(322, 259)
+        Me.Guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox3.TabIndex = 2
+        Me.Guna2PictureBox3.TabStop = False
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -167,122 +282,58 @@ Partial Class NextBttn
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Basic Tic Tac Toe (3 x 3)"
         '
-        'BscPanel
+        'BscPanel4
         '
-        Me.BscPanel.Controls.Add(Me.Guna2PictureBox1)
-        Me.BscPanel.Controls.Add(Me.Label3)
-        Me.BscPanel.Controls.Add(Me.Label2)
-        Me.BscPanel.Location = New System.Drawing.Point(12, 44)
-        Me.BscPanel.Name = "BscPanel"
-        Me.BscPanel.ShadowDecoration.Parent = Me.BscPanel
-        Me.BscPanel.Size = New System.Drawing.Size(380, 427)
-        Me.BscPanel.TabIndex = 2
+        Me.BscPanel4.Controls.Add(Me.Guna2PictureBox4)
+        Me.BscPanel4.Controls.Add(Me.Label6)
+        Me.BscPanel4.Controls.Add(Me.Label7)
+        Me.BscPanel4.Location = New System.Drawing.Point(12, 91)
+        Me.BscPanel4.Name = "BscPanel4"
+        Me.BscPanel4.ShadowDecoration.Parent = Me.BscPanel4
+        Me.BscPanel4.Size = New System.Drawing.Size(380, 427)
+        Me.BscPanel4.TabIndex = 6
         '
-        'Label3
+        'Guna2PictureBox4
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(55, 56)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(250, 34)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "The game is played on a grid that's 3 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "squares by 3 squares."
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Guna2PictureBox4.Image = Global.TicTacToe.My.Resources.Resources.basic_4
+        Me.Guna2PictureBox4.Location = New System.Drawing.Point(19, 113)
+        Me.Guna2PictureBox4.Name = "Guna2PictureBox4"
+        Me.Guna2PictureBox4.ShadowDecoration.Parent = Me.Guna2PictureBox4
+        Me.Guna2PictureBox4.Size = New System.Drawing.Size(322, 259)
+        Me.Guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox4.TabIndex = 2
+        Me.Guna2PictureBox4.TabStop = False
         '
-        'Label2
+        'Label6
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(54, 11)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(241, 24)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Basic Tic Tac Toe (3 x 3)"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(16, 63)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(348, 34)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "Step 3 -The first player to get 3 of her marks in a row" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(up, down, across, or di" &
+    "agonally) is the winner." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'GunaBscBttn
+        'Label7
         '
-        Me.GunaBscBttn.BackColor = System.Drawing.Color.Snow
-        Me.GunaBscBttn.CheckedState.Parent = Me.GunaBscBttn
-        Me.GunaBscBttn.CustomImages.Parent = Me.GunaBscBttn
-        Me.GunaBscBttn.FillColor = System.Drawing.Color.Transparent
-        Me.GunaBscBttn.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaBscBttn.ForeColor = System.Drawing.Color.Black
-        Me.GunaBscBttn.HoverState.Parent = Me.GunaBscBttn
-        Me.GunaBscBttn.Location = New System.Drawing.Point(12, 6)
-        Me.GunaBscBttn.Name = "GunaBscBttn"
-        Me.GunaBscBttn.ShadowDecoration.Parent = Me.GunaBscBttn
-        Me.GunaBscBttn.Size = New System.Drawing.Size(180, 32)
-        Me.GunaBscBttn.TabIndex = 0
-        Me.GunaBscBttn.Text = "Basic "
-        '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(211, 524)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2Button1.TabIndex = 4
-        Me.Guna2Button1.Text = "Next"
-        '
-        'PrvsBttn
-        '
-        Me.PrvsBttn.CheckedState.Parent = Me.PrvsBttn
-        Me.PrvsBttn.CustomImages.Parent = Me.PrvsBttn
-        Me.PrvsBttn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.PrvsBttn.ForeColor = System.Drawing.Color.White
-        Me.PrvsBttn.HoverState.Parent = Me.PrvsBttn
-        Me.PrvsBttn.Location = New System.Drawing.Point(12, 524)
-        Me.PrvsBttn.Name = "PrvsBttn"
-        Me.PrvsBttn.ShadowDecoration.Parent = Me.PrvsBttn
-        Me.PrvsBttn.Size = New System.Drawing.Size(180, 45)
-        Me.PrvsBttn.TabIndex = 5
-        Me.PrvsBttn.Text = "Previous"
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.TicTacToe.My.Resources.Resources.basic_2
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(19, 106)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(322, 259)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox2.TabIndex = 2
-        Me.Guna2PictureBox2.TabStop = False
-        '
-        'Guna2PictureBox3
-        '
-        Me.Guna2PictureBox3.Image = Global.TicTacToe.My.Resources.Resources.basic_3
-        Me.Guna2PictureBox3.Location = New System.Drawing.Point(19, 106)
-        Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
-        Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
-        Me.Guna2PictureBox3.Size = New System.Drawing.Size(322, 259)
-        Me.Guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox3.TabIndex = 2
-        Me.Guna2PictureBox3.TabStop = False
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Image = Global.TicTacToe.My.Resources.Resources.basic_1
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(22, 106)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(336, 259)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox1.TabIndex = 2
-        Me.Guna2PictureBox1.TabStop = False
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(53, 11)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(241, 24)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "Basic Tic Tac Toe (3 x 3)"
         '
         'NextBttn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gainsboro
-        Me.ClientSize = New System.Drawing.Size(1630, 581)
+        Me.ClientSize = New System.Drawing.Size(408, 581)
         Me.ControlBox = False
+        Me.Controls.Add(Me.BscPanel4)
         Me.Controls.Add(Me.PrvsBttn)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.Guna2Panel2)
@@ -294,15 +345,18 @@ Partial Class NextBttn
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
-        Me.BscPanel2.ResumeLayout(False)
-        Me.BscPanel2.PerformLayout()
-        Me.BscPanel3.ResumeLayout(False)
-        Me.BscPanel3.PerformLayout()
         Me.BscPanel.ResumeLayout(False)
         Me.BscPanel.PerformLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BscPanel2.ResumeLayout(False)
+        Me.BscPanel2.PerformLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BscPanel3.ResumeLayout(False)
+        Me.BscPanel3.PerformLayout()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BscPanel4.ResumeLayout(False)
+        Me.BscPanel4.PerformLayout()
+        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -326,4 +380,8 @@ Partial Class NextBttn
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents BscPanel4 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class

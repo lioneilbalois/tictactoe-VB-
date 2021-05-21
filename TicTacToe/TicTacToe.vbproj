@@ -100,12 +100,6 @@
     <Compile Include="Mechanics.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mechncs_new.Designer.vb">
-      <DependentUpon>mechncs_new.vb</DependentUpon>
-    </Compile>
-    <Compile Include="mechncs_new.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Settings.Designer.vb">
       <DependentUpon>Settings.vb</DependentUpon>
     </Compile>
@@ -158,9 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mechanics.resx">
       <DependentUpon>Mechanics.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mechncs_new.resx">
-      <DependentUpon>mechncs_new.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>

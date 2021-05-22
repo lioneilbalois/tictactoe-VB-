@@ -2,6 +2,7 @@
     Dim val(9, 9) As Char 'holds the value of the smallest box (group, specific box)
     Dim hasWon(9) As Boolean 'specifies if grp is already won or not
     Dim nround As Integer = 1 'current round no.
+    Dim path As String = My.Application.Info.DirectoryPath
     Public Function isPopulated(index) 'returns true if group is already populated but not won
         'check if the grp is already populated
         For i As Integer = 1 To 9
@@ -541,36 +542,44 @@
 
     Private Sub drawPb_MouseHover(sender As Object, e As EventArgs) Handles drawPb.MouseHover
         'when hover change
-        drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2hover.png")
+        'drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2hover.png")
+        drawPb.Load(IO.Path.Combine(path, "public/shake2hover.png"))
     End Sub
 
     Private Sub drawPb_MouseLeave(sender As Object, e As EventArgs) Handles drawPb.MouseLeave
         'when hover change
-        drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2.png")
+        'drawPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\shake2.png")
+        drawPb.Load(IO.Path.Combine(path, "public/shake2.png"))
     End Sub
     Private Sub helpPb_MouseHover(sender As Object, e As EventArgs) Handles helpPb.MouseHover
         'when hover change
-        helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark-hv.png")
+        'helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark-hv.png")
+        helpPb.Load(IO.Path.Combine(path, "public/question-mark-hv.png"))
     End Sub
     Private Sub helpPb_MouseLeave(sender As Object, e As EventArgs) Handles helpPb.MouseLeave
         'when hover change
-        helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark.png")
+        helpPb.Load(IO.Path.Combine(path, "public/question-mark.png"))
+        'helpPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\question-mark.png")
     End Sub
     Private Sub resetPb_MouseHover(sender As Object, e As EventArgs) Handles resetPb.MouseHover
         'when hover change
-        resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow-hv.png")
+        resetPb.Load(IO.Path.Combine(path, "public/update-arrow-hv.png"))
+        'resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow-hv.png")
     End Sub
     Private Sub resetPb_MouseLeave(sender As Object, e As EventArgs) Handles resetPb.MouseLeave
         'when hover change
-        resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow.png")
+        resetPb.Load(IO.Path.Combine(path, "public/update-arrow.png"))
+        'resetPb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\update-arrow.png")
     End Sub
 
     Private Sub homePb_MouseHover(sender As Object, e As EventArgs) Handles homePb.MouseHover
         'when hover change
-        homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage-hv.png")
+        homePb.Load(IO.Path.Combine(path, "public/homepage-hv.png"))
+        'homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage-hv.png")
     End Sub
     Private Sub homePb_MouseLeave(sender As Object, e As EventArgs) Handles homePb.MouseLeave
         'when hover change
-        homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage.png")
+        homePb.Load(IO.Path.Combine(path, "public/homepage.png"))
+        'homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage.png")
     End Sub
 End Class

@@ -1,6 +1,7 @@
 ﻿Public Class Mechanics
     Dim id As Integer = 1
     Dim grp As Char = "b"
+    Dim path As String = My.Application.Info.DirectoryPath
 
     Private Sub basicBt_Click(sender As Object, e As EventArgs) Handles basicBt.Click
         id = 1
@@ -52,19 +53,23 @@
     End Sub
     Private Sub leftBt_MouseLeave(sender As Object, e As EventArgs) Handles leftBt.MouseLeave
         'when hover change
-        leftBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\arrow-pointing-to-left.png")
+        'leftBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\arrow-pointing-to-left.png")
+        leftBt.Load(IO.Path.Combine(path, "public/arrow-pointing-to-left.png"))
     End Sub
     Private Sub leftBt_MouseHover(sender As Object, e As EventArgs) Handles leftBt.MouseHover
         'when hover change
-        leftBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\left-hover.png")
+        'leftBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\left-hover.png")
+        leftBt.Load(IO.Path.Combine(path, "public/left-hover.png"))
     End Sub
     Private Sub rightBt_MouseLeave(sender As Object, e As EventArgs) Handles rightBt.MouseLeave
         'when hover change
-        rightBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\arrow-pointing-to-right.png")
+        'rightBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\arrow-pointing-to-right.png")
+        rightBt.Load(IO.Path.Combine(path, "public/arrow-pointing-to-right.png"))
     End Sub
     Private Sub rightBt_MouseHover(sender As Object, e As EventArgs) Handles rightBt.MouseHover
         'when hover change
-        rightBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\right-hover.png")
+        'rightBt.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\right-hover.png")
+        rightBt.Load(IO.Path.Combine(path, "public/right-hover.png"))
     End Sub
 
     Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
@@ -74,5 +79,9 @@
         id = 1
         grp = "b"
         Me.Close()
+    End Sub
+
+    Private Sub Mechanics_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        System.Console.WriteLine(IO.Path.Combine(path, "public\pdffile.pdf"))
     End Sub
 End Class

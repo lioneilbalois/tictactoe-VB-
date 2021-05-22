@@ -70,7 +70,11 @@
 
         winpop.mode = "B"
         winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
-        winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
+        If (p1name.Text = "P1 -") Then
+            winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
+        Else
+            winpop.winrLb.Text = If(who = "X", p1name.Text, p2name.Text)
+        End If
         winpop.ShowDialog()
     End Function
 
@@ -139,7 +143,10 @@
     End Sub
 
     Private Sub helpPb_Click(sender As Object, e As EventArgs) Handles helpPb.Click
-        'Pop game mechanics of the game currently played
+        'show instruction
+        Mechanics.Guna2ControlBox2.Visible = False
+        Mechanics.homePb.Visible = False
+        Mechanics.ShowDialog()
     End Sub
 
     Private Sub resetPb_Click(sender As Object, e As EventArgs) Handles resetPb.Click

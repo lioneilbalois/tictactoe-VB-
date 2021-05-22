@@ -78,7 +78,7 @@ Partial Class startForm
         Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
         Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
         Me.Guna2Button7.FillColor = System.Drawing.Color.White
-        Me.Guna2Button7.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button7.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!)
         Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
         Me.Guna2Button7.Location = New System.Drawing.Point(14, 42)

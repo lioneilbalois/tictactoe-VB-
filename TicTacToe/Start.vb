@@ -14,7 +14,8 @@
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles mechaBt.Click
         Me.Hide()
-        Mechanics_New.Show()
+        Mechanics.basicBt.PerformClick()
+        Mechanics.Show()
     End Sub
 
     Private Sub aboutBt_Click(sender As Object, e As EventArgs) Handles aboutBt.Click

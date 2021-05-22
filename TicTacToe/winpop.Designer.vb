@@ -26,12 +26,12 @@ Partial Class winpop
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(winpop))
         Me.roundLb = New System.Windows.Forms.Label()
         Me.winrLb = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
+        Me.nextBt = New Guna.UI2.WinForms.Guna2Button()
+        Me.mainBt = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'roundLb
@@ -57,26 +57,6 @@ Partial Class winpop
         Me.winrLb.Size = New System.Drawing.Size(172, 58)
         Me.winrLb.TabIndex = 1
         Me.winrLb.Text = "--Name--"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(270, 163)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(86, 24)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Next Round"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(270, 193)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 24)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Main Menu"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -109,16 +89,50 @@ Partial Class winpop
         '
         Me.Guna2AnimateWindow1.TargetForm = Me
         '
+        'nextBt
+        '
+        Me.nextBt.BackColor = System.Drawing.Color.White
+        Me.nextBt.BorderThickness = 2
+        Me.nextBt.CheckedState.Parent = Me.nextBt
+        Me.nextBt.CustomImages.Parent = Me.nextBt
+        Me.nextBt.FillColor = System.Drawing.Color.White
+        Me.nextBt.Font = New System.Drawing.Font("Balsamiq Sans", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nextBt.ForeColor = System.Drawing.Color.Black
+        Me.nextBt.HoverState.Parent = Me.nextBt
+        Me.nextBt.Location = New System.Drawing.Point(256, 165)
+        Me.nextBt.Name = "nextBt"
+        Me.nextBt.ShadowDecoration.Parent = Me.nextBt
+        Me.nextBt.Size = New System.Drawing.Size(99, 24)
+        Me.nextBt.TabIndex = 13
+        Me.nextBt.Text = "Next Round"
+        '
+        'mainBt
+        '
+        Me.mainBt.BackColor = System.Drawing.Color.White
+        Me.mainBt.BorderThickness = 2
+        Me.mainBt.CheckedState.Parent = Me.mainBt
+        Me.mainBt.CustomImages.Parent = Me.mainBt
+        Me.mainBt.FillColor = System.Drawing.Color.White
+        Me.mainBt.Font = New System.Drawing.Font("Balsamiq Sans", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mainBt.ForeColor = System.Drawing.Color.Black
+        Me.mainBt.HoverState.Parent = Me.mainBt
+        Me.mainBt.Location = New System.Drawing.Point(256, 191)
+        Me.mainBt.Name = "mainBt"
+        Me.mainBt.ShadowDecoration.Parent = Me.mainBt
+        Me.mainBt.Size = New System.Drawing.Size(99, 24)
+        Me.mainBt.TabIndex = 14
+        Me.mainBt.Text = "Main Menu"
+        '
         'winpop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(380, 237)
+        Me.Controls.Add(Me.mainBt)
+        Me.Controls.Add(Me.nextBt)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.winrLb)
         Me.Controls.Add(Me.roundLb)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -132,10 +146,10 @@ Partial Class winpop
 
     Friend WithEvents roundLb As Label
     Friend WithEvents winrLb As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents nextBt As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents mainBt As Guna.UI2.WinForms.Guna2Button
 End Class

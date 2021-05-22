@@ -94,9 +94,9 @@ Partial Class About
         Me.homePb.BackColor = System.Drawing.Color.Transparent
         Me.homePb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.homePb.Image = CType(resources.GetObject("homePb.Image"), System.Drawing.Image)
-        Me.homePb.Location = New System.Drawing.Point(347, 32)
+        Me.homePb.Location = New System.Drawing.Point(353, 31)
         Me.homePb.Name = "homePb"
-        Me.homePb.Size = New System.Drawing.Size(35, 32)
+        Me.homePb.Size = New System.Drawing.Size(32, 29)
         Me.homePb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.homePb.TabIndex = 60
         Me.homePb.TabStop = False

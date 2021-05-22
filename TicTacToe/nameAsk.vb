@@ -5,6 +5,13 @@
             MessageBox.Show("Please enter names or press skip..", "Play Error")
             Exit Sub
         End If
+        If (modeLb.Text = "Basic") Then
+            Basic.p1name.Text = "P1 - " + p1Tb.Text
+            Basic.p2name.Text = "P2 - " + p2Tb.Text
+        Else
+            Ulti.p1name.Text = "P1 - " + p1Tb.Text
+            Ulti.p2name.Text = "P2 - " + p2Tb.Text
+        End If
         skipBt_Click(sender, e)
     End Sub
 

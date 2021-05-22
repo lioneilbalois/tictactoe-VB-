@@ -45,6 +45,8 @@ Partial Class Basic
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.drawPb = New System.Windows.Forms.PictureBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.p1name = New System.Windows.Forms.Label()
+        Me.p2name = New System.Windows.Forms.Label()
         CType(Me.homePb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.helpPb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.resetPb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -310,6 +312,30 @@ Partial Class Basic
         Me.drawPb.TabIndex = 48
         Me.drawPb.TabStop = False
         '
+        'p1name
+        '
+        Me.p1name.AutoSize = True
+        Me.p1name.BackColor = System.Drawing.Color.Transparent
+        Me.p1name.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.p1name.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.p1name.Location = New System.Drawing.Point(24, 444)
+        Me.p1name.Name = "p1name"
+        Me.p1name.Size = New System.Drawing.Size(26, 18)
+        Me.p1name.TabIndex = 49
+        Me.p1name.Text = "P1 -"
+        '
+        'p2name
+        '
+        Me.p2name.AutoSize = True
+        Me.p2name.BackColor = System.Drawing.Color.Transparent
+        Me.p2name.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.p2name.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.p2name.Location = New System.Drawing.Point(24, 457)
+        Me.p2name.Name = "p2name"
+        Me.p2name.Size = New System.Drawing.Size(28, 18)
+        Me.p2name.TabIndex = 50
+        Me.p2name.Text = "P2 -"
+        '
         'Basic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -318,6 +344,8 @@ Partial Class Basic
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(479, 491)
         Me.ControlBox = False
+        Me.Controls.Add(Me.p2name)
+        Me.Controls.Add(Me.p1name)
         Me.Controls.Add(Me.drawPb)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Guna2ControlBox2)
@@ -372,4 +400,6 @@ Partial Class Basic
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents drawPb As PictureBox
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents p1name As Label
+    Friend WithEvents p2name As Label
 End Class

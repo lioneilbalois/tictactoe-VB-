@@ -1,7 +1,4 @@
 ﻿Public Class Mechanics_New
-    Private Sub GunaBscBttn_Click(sender As Object, e As EventArgs) Handles GunaBscBttn.Click
-
-    End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         If GrpBx1.Visible = True Then
@@ -39,8 +36,12 @@
         End If
     End Sub
 
-    Private Sub homePb_Click(sender As Object, e As EventArgs) Handles homePb.Click
+    Private Sub homePb_Click(sender As Object, e As EventArgs)
         Me.Hide()
         startForm.Show()
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
     End Sub
 End Class

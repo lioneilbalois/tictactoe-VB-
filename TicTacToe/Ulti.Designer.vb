@@ -144,6 +144,8 @@ Partial Class Ulti
         Me.resetPb = New System.Windows.Forms.PictureBox()
         Me.helpPb = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.p2name = New System.Windows.Forms.Label()
+        Me.p1name = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.pb1O, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb1X, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1863,6 +1865,30 @@ Partial Class Ulti
         Me.Label2.TabIndex = 63
         Me.Label2.Text = "Draw      Reset    Help"
         '
+        'p2name
+        '
+        Me.p2name.AutoSize = True
+        Me.p2name.BackColor = System.Drawing.Color.Transparent
+        Me.p2name.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.p2name.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.p2name.Location = New System.Drawing.Point(18, 101)
+        Me.p2name.Name = "p2name"
+        Me.p2name.Size = New System.Drawing.Size(28, 18)
+        Me.p2name.TabIndex = 65
+        Me.p2name.Text = "P2 -"
+        '
+        'p1name
+        '
+        Me.p1name.AutoSize = True
+        Me.p1name.BackColor = System.Drawing.Color.Transparent
+        Me.p1name.Font = New System.Drawing.Font("Balsamiq Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.p1name.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.p1name.Location = New System.Drawing.Point(18, 88)
+        Me.p1name.Name = "p1name"
+        Me.p1name.Size = New System.Drawing.Size(26, 18)
+        Me.p1name.TabIndex = 64
+        Me.p1name.Text = "P1 -"
+        '
         'Ulti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1871,6 +1897,8 @@ Partial Class Ulti
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(666, 621)
         Me.ControlBox = False
+        Me.Controls.Add(Me.p2name)
+        Me.Controls.Add(Me.p1name)
         Me.Controls.Add(Me.drawPb)
         Me.Controls.Add(Me.resetPb)
         Me.Controls.Add(Me.helpPb)
@@ -2054,4 +2082,6 @@ Partial Class Ulti
     Friend WithEvents resetPb As PictureBox
     Friend WithEvents helpPb As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents p2name As Label
+    Friend WithEvents p1name As Label
 End Class

@@ -157,7 +157,12 @@
         winpop.mode = "U"
         winpop.roundLb.Text = String.Format("Round {0} Winner:", nround)
         nround += 1
-        winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
+        If (p1name.Text = "P1 -") Then
+            winpop.winrLb.Text = If(who = "X", "Player 1", "Player 2")
+        Else
+            winpop.winrLb.Text = If(who = "X", p1name.Text, p2name.Text)
+        End If
+
         winpop.ShowDialog()
     End Function
 
@@ -528,6 +533,10 @@
 
     Private Sub helpPb_Click(sender As Object, e As EventArgs) Handles helpPb.Click
         'show instruction
+        Mechanics.homePb.Visible = False
+        Mechanics.Guna2ControlBox2.Visible = False
+        Mechanics.ultiBt.PerformClick()
+        Mechanics.ShowDialog()
     End Sub
 
     Private Sub drawPb_MouseHover(sender As Object, e As EventArgs) Handles drawPb.MouseHover

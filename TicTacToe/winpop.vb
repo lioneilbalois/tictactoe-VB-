@@ -34,12 +34,12 @@
                             MessageBoxButtons.YesNo)
 
         If (ask = DialogResult.Yes) Then
-            Me.Close()
             If (mode = "B") Then
                 Basic.Close()
             Else
                 Ulti.Close()
             End If
+            Me.Close()
             startForm.Show()
         End If
     End Sub

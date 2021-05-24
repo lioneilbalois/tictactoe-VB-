@@ -205,20 +205,28 @@
         'Winning scenarios as a whole: 8
         If ((val(0, 1) = val(0, 2)) And (val(0, 2) = val(0, 3)) And (val(0, 1) <> "A")) Then
             ender(val(0, 1))
+            Exit Function
         ElseIf ((val(0, 4) = val(0, 5)) And (val(0, 5) = val(0, 6)) And (val(0, 4) <> "A")) Then
             ender(val(0, 4))
+            Exit Function
         ElseIf ((val(0, 7) = val(0, 8)) And (val(0, 8) = val(0, 9)) And (val(0, 7) <> "A")) Then
             ender(val(0, 7))
+            Exit Function
         ElseIf ((val(0, 1) = val(0, 6)) And (val(0, 6) = val(0, 9)) And (val(0, 1) <> "A")) Then
             ender(val(0, 1))
+            Exit Function
         ElseIf ((val(0, 2) = val(0, 5)) And (val(0, 5) = val(0, 8)) And (val(0, 2) <> "A")) Then
             ender(val(0, 2))
+            Exit Function
         ElseIf ((val(0, 3) = val(0, 4)) And (val(0, 4) = val(0, 7)) And (val(0, 3) <> "A")) Then
             ender(val(0, 3))
+            Exit Function
         ElseIf ((val(0, 1) = val(0, 5)) And (val(0, 5) = val(0, 7)) And (val(0, 1) <> "A")) Then
             ender(val(0, 1))
+            Exit Function
         ElseIf ((val(0, 3) = val(0, 5)) And (val(0, 5) = val(0, 8)) And (val(0, 3) <> "A")) Then
             ender(val(0, 3))
+            Exit Function
         End If
 
         'to point next player to designated box/grp

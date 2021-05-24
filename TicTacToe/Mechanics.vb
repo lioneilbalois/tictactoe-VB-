@@ -80,8 +80,4 @@
         grp = "b"
         Me.Close()
     End Sub
-
-    Private Sub Mechanics_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        System.Console.WriteLine(IO.Path.Combine(path, "public\pdffile.pdf"))
-    End Sub
 End Class

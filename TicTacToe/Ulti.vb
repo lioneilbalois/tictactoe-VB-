@@ -542,10 +542,7 @@
 
     Private Sub helpPb_Click(sender As Object, e As EventArgs) Handles helpPb.Click
         'show instruction
-        Mechanics.homePb.Visible = False
-        Mechanics.Guna2ControlBox2.Visible = False
-        Mechanics.ultiBt.PerformClick()
-        Mechanics.ShowDialog()
+        ulti_mec.ShowDialog()
     End Sub
 
     Private Sub drawPb_MouseHover(sender As Object, e As EventArgs) Handles drawPb.MouseHover
@@ -589,5 +586,9 @@
         'when hover change
         homePb.Load(IO.Path.Combine(path, "public/homepage.png"))
         'homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage.png")
+    End Sub
+
+    Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
+        Application.Exit()
     End Sub
 End Class

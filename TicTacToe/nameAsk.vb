@@ -22,14 +22,14 @@
         Me.Hide()
         p1Tb.Text = ""
         p2Tb.Text = ""
-        If (modeLb.Text = "Basic") Then
-            Basic.Show()
-        Else
-            Ulti.Show()
-        End If
     End Sub
 
     Private Sub backBt_Click(sender As Object, e As EventArgs) Handles backBt.Click
+        If (modeLb.Text = "Basic") Then
+            Basic.Close()
+        Else
+            Ulti.Close()
+        End If
         Me.Close()
         startForm.Show()
     End Sub

@@ -4,6 +4,7 @@
     Dim path As String = My.Application.Info.DirectoryPath
 
     Private Sub basicBt_Click(sender As Object, e As EventArgs) Handles basicBt.Click
+        DirectCast(Controls.Find(grp & CStr(id), True)(0), PictureBox).Visible = False
         id = 1
         grp = "b"
         basicBt.FillColor = Color.IndianRed
@@ -12,6 +13,7 @@
         ultiBt.ForeColor = Color.Black
         overLb.Text = "1"
         totalLb.Text = "of 4"
+        DirectCast(Controls.Find("b" & CStr(1), True)(0), PictureBox).Visible = True
         ultiPan.Visible = False
         basicPan.Visible = True
     End Sub
@@ -28,6 +30,7 @@
     End Sub
 
     Private Sub ultiBt_Click(sender As Object, e As EventArgs) Handles ultiBt.Click
+        DirectCast(Controls.Find(grp & CStr(id), True)(0), PictureBox).Visible = False
         id = 1
         grp = "u"
         ultiBt.FillColor = Color.IndianRed
@@ -36,6 +39,7 @@
         basicBt.ForeColor = Color.Black
         overLb.Text = "1"
         totalLb.Text = "of 7"
+        DirectCast(Controls.Find("u" & CStr(1), True)(0), PictureBox).Visible = True
         basicPan.Visible = False
         ultiPan.Visible = True
         'u1.Visible = True
@@ -73,11 +77,6 @@
     End Sub
 
     Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
-        Me.Hide()
-        homePb.Visible = True
-        Guna2ControlBox2.Visible = True
-        id = 1
-        grp = "b"
-        Me.Close()
+        Application.Exit()
     End Sub
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class About
+﻿Public Class setting
     Private Sub homePb_Click(sender As Object, e As EventArgs) Handles homePb.Click
         Me.Close()
         startForm.Show()

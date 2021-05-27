@@ -1923,9 +1923,10 @@ Partial Class Ulti
         Me.Controls.Add(Me.Label2)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Ulti"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "TicTacToe"
+        Me.Text = "Ultimate 9x9"
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.pb1O, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pb1X, System.ComponentModel.ISupportInitialize).EndInit()

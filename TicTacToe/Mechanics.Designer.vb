@@ -409,6 +409,7 @@ Partial Class Mechanics
         Me.Controls.Add(Me.lbWho)
         Me.Controls.Add(Me.homePb)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Mechanics"

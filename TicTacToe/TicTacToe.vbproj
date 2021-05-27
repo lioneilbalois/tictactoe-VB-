@@ -76,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="basic-mec.Designer.vb">
+      <DependentUpon>basic-mec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="basic-mec.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Basic.Designer.vb">
       <DependentUpon>Basic.vb</DependentUpon>
     </Compile>
@@ -106,10 +112,18 @@
     <Compile Include="Mechanics.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Settings.Designer.vb">
-      <DependentUpon>Settings.vb</DependentUpon>
+    <Compile Include="setting.Designer.vb">
+      <DependentUpon>setting.vb</DependentUpon>
     </Compile>
-    <Compile Include="Settings.vb" />
+    <Compile Include="setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ulti-mec.Designer.vb">
+      <DependentUpon>ulti-mec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ulti-mec.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="winpop.Designer.vb">
       <DependentUpon>winpop.vb</DependentUpon>
     </Compile>
@@ -147,6 +161,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="basic-mec.resx">
+      <DependentUpon>basic-mec.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Basic.resx">
       <DependentUpon>Basic.vb</DependentUpon>
     </EmbeddedResource>
@@ -162,8 +179,11 @@
     <EmbeddedResource Include="Mechanics.resx">
       <DependentUpon>Mechanics.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings.resx">
-      <DependentUpon>Settings.vb</DependentUpon>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ulti-mec.resx">
+      <DependentUpon>ulti-mec.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="winpop.resx">
       <DependentUpon>winpop.vb</DependentUpon>

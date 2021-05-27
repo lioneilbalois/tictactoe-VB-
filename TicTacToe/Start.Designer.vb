@@ -26,7 +26,6 @@ Partial Class startForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(startForm))
         Me.mechaBt = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel2 = New Guna.UI2.WinForms.Guna2ShadowPanel()
-        Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.basicBt = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.ultiBt = New Guna.UI2.WinForms.Guna2Button()
@@ -41,7 +40,10 @@ Partial Class startForm
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Guna2ShadowPanel7 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2ShadowPanel7.SuspendLayout()
         Me.SuspendLayout()
         '
         'mechaBt
@@ -70,23 +72,6 @@ Partial Class startForm
         Me.Guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black
         Me.Guna2ShadowPanel2.Size = New System.Drawing.Size(122, 31)
         Me.Guna2ShadowPanel2.TabIndex = 12
-        '
-        'Guna2Button7
-        '
-        Me.Guna2Button7.BackColor = System.Drawing.Color.White
-        Me.Guna2Button7.BorderThickness = 3
-        Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
-        Me.Guna2Button7.FillColor = System.Drawing.Color.White
-        Me.Guna2Button7.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!)
-        Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Location = New System.Drawing.Point(14, 42)
-        Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Size = New System.Drawing.Size(391, 49)
-        Me.Guna2Button7.TabIndex = 21
-        Me.Guna2Button7.Text = "Tic-Tac-Toe (Multiplayer Offline)"
         '
         'basicBt
         '
@@ -276,6 +261,29 @@ Partial Class startForm
         Me.Guna2ControlBox1.TabIndex = 33
         Me.Guna2ControlBox1.UseTransparentBackground = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(4, 4)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(358, 39)
+        Me.Label1.TabIndex = 33
+        Me.Label1.Text = "Tic-Tac-Toe (Multiplayer Offline)"
+        '
+        'Guna2ShadowPanel7
+        '
+        Me.Guna2ShadowPanel7.BackColor = System.Drawing.Color.Black
+        Me.Guna2ShadowPanel7.Controls.Add(Me.Label1)
+        Me.Guna2ShadowPanel7.FillColor = System.Drawing.Color.White
+        Me.Guna2ShadowPanel7.Location = New System.Drawing.Point(26, 41)
+        Me.Guna2ShadowPanel7.Name = "Guna2ShadowPanel7"
+        Me.Guna2ShadowPanel7.ShadowColor = System.Drawing.Color.Black
+        Me.Guna2ShadowPanel7.Size = New System.Drawing.Size(367, 47)
+        Me.Guna2ShadowPanel7.TabIndex = 34
+        '
         'startForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -292,20 +300,22 @@ Partial Class startForm
         Me.Controls.Add(Me.Guna2ShadowPanel3)
         Me.Controls.Add(Me.basicBt)
         Me.Controls.Add(Me.Guna2ShadowPanel1)
-        Me.Controls.Add(Me.Guna2Button7)
         Me.Controls.Add(Me.mechaBt)
         Me.Controls.Add(Me.Guna2ShadowPanel2)
         Me.Controls.Add(Me.Guna2Panel1)
+        Me.Controls.Add(Me.Guna2ShadowPanel7)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "startForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2ShadowPanel7.ResumeLayout(False)
+        Me.Guna2ShadowPanel7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents mechaBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel2 As Guna.UI2.WinForms.Guna2ShadowPanel
-    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents basicBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents ultiBt As Guna.UI2.WinForms.Guna2Button
@@ -320,4 +330,6 @@ Partial Class startForm
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents Guna2ShadowPanel7 As Guna.UI2.WinForms.Guna2ShadowPanel
+    Friend WithEvents Label1 As Label
 End Class

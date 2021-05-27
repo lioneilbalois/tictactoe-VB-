@@ -145,9 +145,7 @@
 
     Private Sub helpPb_Click(sender As Object, e As EventArgs) Handles helpPb.Click
         'show instruction
-        Mechanics.Guna2ControlBox2.Visible = False
-        Mechanics.homePb.Visible = False
-        Mechanics.ShowDialog()
+        basic_mec.ShowDialog()
     End Sub
 
     Private Sub resetPb_Click(sender As Object, e As EventArgs) Handles resetPb.Click
@@ -221,5 +219,9 @@
         'when hover change
         homePb.Load(IO.Path.Combine(path, "public/homepage.png"))
         'homePb.Load("C:\Users\Lioneil\Documents\GitHub\tictactoe\icons\homepage.png")
+    End Sub
+
+    Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
+        Application.Exit()
     End Sub
 End Class

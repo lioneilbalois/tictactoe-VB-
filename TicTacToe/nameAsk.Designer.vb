@@ -22,6 +22,7 @@ Partial Class nameAsk
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(nameAsk))
         Me.roundLb = New System.Windows.Forms.Label()
         Me.modeLb = New System.Windows.Forms.Label()
@@ -32,6 +33,7 @@ Partial Class nameAsk
         Me.skipBt = New Guna.UI2.WinForms.Guna2Button()
         Me.playBt = New Guna.UI2.WinForms.Guna2Button()
         Me.backBt = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.SuspendLayout()
         '
         'roundLb
@@ -181,6 +183,11 @@ Partial Class nameAsk
         Me.backBt.TabIndex = 14
         Me.backBt.Text = "Back"
         '
+        'Guna2AnimateWindow1
+        '
+        Me.Guna2AnimateWindow1.Interval = 600
+        Me.Guna2AnimateWindow1.TargetForm = Me
+        '
         'nameAsk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -200,7 +207,7 @@ Partial Class nameAsk
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "nameAsk"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Enter Name"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -215,4 +222,5 @@ Partial Class nameAsk
     Friend WithEvents skipBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents playBt As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents backBt As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
 End Class

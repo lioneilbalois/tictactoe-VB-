@@ -50,7 +50,7 @@ Partial Class About
         Me.Guna2ControlBox2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox2.HoverState.Parent = Me.Guna2ControlBox2
         Me.Guna2ControlBox2.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox2.Location = New System.Drawing.Point(317, 0)
+        Me.Guna2ControlBox2.Location = New System.Drawing.Point(333, 0)
         Me.Guna2ControlBox2.Name = "Guna2ControlBox2"
         Me.Guna2ControlBox2.PressedColor = System.Drawing.Color.Red
         Me.Guna2ControlBox2.ShadowDecoration.Parent = Me.Guna2ControlBox2
@@ -66,7 +66,7 @@ Partial Class About
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(360, 0)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(376, 0)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.PressedColor = System.Drawing.Color.Red
         Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
@@ -85,7 +85,7 @@ Partial Class About
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(403, 25)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(419, 25)
         Me.Guna2Panel1.TabIndex = 33
         Me.Guna2Panel1.UseTransparentBackground = True
         '
@@ -94,7 +94,7 @@ Partial Class About
         Me.homePb.BackColor = System.Drawing.Color.Transparent
         Me.homePb.Cursor = System.Windows.Forms.Cursors.Hand
         Me.homePb.Image = CType(resources.GetObject("homePb.Image"), System.Drawing.Image)
-        Me.homePb.Location = New System.Drawing.Point(353, 31)
+        Me.homePb.Location = New System.Drawing.Point(366, 35)
         Me.homePb.Name = "homePb"
         Me.homePb.Size = New System.Drawing.Size(32, 29)
         Me.homePb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -107,7 +107,7 @@ Partial Class About
         Me.lbWho.BackColor = System.Drawing.Color.Transparent
         Me.lbWho.Font = New System.Drawing.Font("Balsamiq Sans", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbWho.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.lbWho.Location = New System.Drawing.Point(44, 107)
+        Me.lbWho.Location = New System.Drawing.Point(44, 115)
         Me.lbWho.Name = "lbWho"
         Me.lbWho.Size = New System.Drawing.Size(80, 39)
         Me.lbWho.TabIndex = 61
@@ -119,7 +119,7 @@ Partial Class About
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label1.Location = New System.Drawing.Point(60, 337)
+        Me.Label1.Location = New System.Drawing.Point(76, 335)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(97, 24)
         Me.Label1.TabIndex = 62
@@ -131,7 +131,7 @@ Partial Class About
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label2.Location = New System.Drawing.Point(60, 385)
+        Me.Label2.Location = New System.Drawing.Point(76, 383)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(243, 24)
         Me.Label2.TabIndex = 63
@@ -143,7 +143,7 @@ Partial Class About
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label3.Location = New System.Drawing.Point(60, 186)
+        Me.Label3.Location = New System.Drawing.Point(76, 187)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(256, 24)
         Me.Label3.TabIndex = 64
@@ -155,7 +155,7 @@ Partial Class About
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label4.Location = New System.Drawing.Point(60, 210)
+        Me.Label4.Location = New System.Drawing.Point(76, 211)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(252, 24)
         Me.Label4.TabIndex = 65
@@ -167,7 +167,7 @@ Partial Class About
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label5.Location = New System.Drawing.Point(60, 361)
+        Me.Label5.Location = New System.Drawing.Point(76, 359)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(146, 24)
         Me.Label5.TabIndex = 66
@@ -179,7 +179,7 @@ Partial Class About
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Balsamiq Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label6.Location = New System.Drawing.Point(60, 234)
+        Me.Label6.Location = New System.Drawing.Point(76, 235)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(174, 24)
         Me.Label6.TabIndex = 67
@@ -191,7 +191,7 @@ Partial Class About
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Balsamiq Sans", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label7.Location = New System.Drawing.Point(45, 32)
+        Me.Label7.Location = New System.Drawing.Point(57, 36)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(275, 31)
         Me.Label7.TabIndex = 68
@@ -200,9 +200,9 @@ Partial Class About
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 35)
+        Me.PictureBox1.Location = New System.Drawing.Point(25, 33)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 27)
+        Me.PictureBox1.Size = New System.Drawing.Size(36, 38)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 69
         Me.PictureBox1.TabStop = False
@@ -213,7 +213,7 @@ Partial Class About
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(403, 581)
+        Me.ClientSize = New System.Drawing.Size(419, 620)
         Me.ControlBox = False
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
@@ -227,9 +227,10 @@ Partial Class About
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Label7)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "About"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form2"
+        Me.Text = "About"
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.homePb, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
